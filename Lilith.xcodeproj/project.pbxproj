@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002A2E3DD287566BD16A4491 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3577B0FF4AB935E9684952 /* ProjectsView.swift */; };
+		280835EA7614BCFB2E54E6B4 /* CenterInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28708C970503E336C7DA105 /* CenterInputView.swift */; };
+		32A60F80908DB223DF01227B /* FloatingObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832A7001DC963E4D960619F /* FloatingObjectView.swift */; };
+		587EEE579A8D32EAD9261031 /* FloatingToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58084D0D599977224630407D /* FloatingToolView.swift */; };
+		613FE39C68D949567581D213 /* VoidCanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9621B2B92E8CECC525ED87 /* VoidCanvasViewModel.swift */; };
+		67B6B45AB1D79405E0285163 /* LilithHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED00A2946E62CCAAB032C71 /* LilithHomeView.swift */; };
+		6E4D82B3B4B83C35409AA575 /* IDEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A3ACC3CCFF22DE21AA514C /* IDEView.swift */; };
+		85FB421C05C0341F0F24ED72 /* CloneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10817D020F6EEC457D41A7E2 /* CloneView.swift */; };
+		8F7A1E7FB22EC55969DDBBD4 /* VaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD21DB242E97CEBD51B732B3 /* VaultView.swift */; };
+		93F523E8B4F33B0C685F4F0B /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9366A4FB9F8410B2FD08C3 /* HistoryView.swift */; };
+		9C6CFEC2C68594A15EC7AAE9 /* HomeDrawerPanels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF7E830F8656DC8EC2CDA7 /* HomeDrawerPanels.swift */; };
+		A0D3EE9386359CA7206B45EC /* ToolLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA425EAEAFA6940B04929B /* ToolLayerView.swift */; };
+		AA100001 /* Lilith.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000 /* Lilith.swift */; };
+		AA10000F /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000F /* AuthStore.swift */; };
+		AA10001C /* LilithSpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001C /* LilithSpeechManager.swift */; };
+		AA10001D /* LilithStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001D /* LilithStateManager.swift */; };
+		AA10001E /* LilithTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001E /* LilithTheme.swift */; };
+		AA100022 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000022 /* RootView.swift */; };
+		AA100023 /* SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000023 /* SessionStorage.swift */; };
+		AB200001 /* Lilith.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000 /* Lilith.swift */; };
+		AB200002 /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000F /* AuthStore.swift */; };
+		AB200003 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000010 /* APIClient.swift */; };
+		AB200004 /* CenterResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000011 /* CenterResultView.swift */; };
+		AB200005 /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000012 /* ChatModels.swift */; };
+		AB200006 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000013 /* ChatView.swift */; };
+		AB200007 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000014 /* ChatViewModel.swift */; };
+		AB200008 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000015 /* ContentView.swift */; };
+		AB200009 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000016 /* GlassCard.swift */; };
+		AB20000A /* ImageGenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000017 /* ImageGenView.swift */; };
+		AB20000B /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000018 /* KeyboardObserver.swift */; };
+		AB20000C /* LilithAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000019 /* LilithAnimatedView.swift */; };
+		AB20000D /* LilithAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001A /* LilithAudioManager.swift */; };
+		AB20000E /* LilithMotionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001B /* LilithMotionModifier.swift */; };
+		AB20000F /* LilithSpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001C /* LilithSpeechManager.swift */; };
+		AB200010 /* LilithStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001D /* LilithStateManager.swift */; };
+		AB200011 /* LilithTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001E /* LilithTheme.swift */; };
+		AB200012 /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001F /* MediaView.swift */; };
+		AB200013 /* MediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000020 /* MediaViewModel.swift */; };
+		AB200014 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000021 /* PrimaryButtonStyle.swift */; };
+		AB200015 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000022 /* RootView.swift */; };
+		AB200016 /* SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000023 /* SessionStorage.swift */; };
+		AB200017 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000024 /* VideoView.swift */; };
+		AB200018 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000025 /* VideoViewModel.swift */; };
+		AB200019 /* VoidCoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000026 /* VoidCoreView.swift */; };
+		AB20001B /* IntegrationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000040 /* IntegrationModels.swift */; };
+		AB20001C /* IntegrationAgentTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000041 /* IntegrationAgentTypes.swift */; };
+		AB20001D /* IntegrationAccountTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000042 /* IntegrationAccountTypes.swift */; };
+		AB20001E /* IntegrationCommunicationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000043 /* IntegrationCommunicationTypes.swift */; };
+		AB20001F /* IntegrationSupportTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000044 /* IntegrationSupportTypes.swift */; };
+		E596FB43BF6473DD9CE1D506 /* ToolCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641C9AA974F9C4E35594970D /* ToolCategory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07A3ACC3CCFF22DE21AA514C /* IDEView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IDEView.swift; sourceTree = "<group>"; };
+		0A3577B0FF4AB935E9684952 /* ProjectsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		10817D020F6EEC457D41A7E2 /* CloneView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CloneView.swift; sourceTree = "<group>"; };
+		2ED00A2946E62CCAAB032C71 /* LilithHomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LilithHomeView.swift; sourceTree = "<group>"; };
+		3F9366A4FB9F8410B2FD08C3 /* HistoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		4BEA425EAEAFA6940B04929B /* ToolLayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ToolLayerView.swift; sourceTree = "<group>"; };
+		58084D0D599977224630407D /* FloatingToolView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatingToolView.swift; sourceTree = "<group>"; };
+		641C9AA974F9C4E35594970D /* ToolCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ToolCategory.swift; sourceTree = "<group>"; };
+		6832A7001DC963E4D960619F /* FloatingObjectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatingObjectView.swift; sourceTree = "<group>"; };
+		8F9621B2B92E8CECC525ED87 /* VoidCanvasViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VoidCanvasViewModel.swift; sourceTree = "<group>"; };
+		A5AF7E830F8656DC8EC2CDA7 /* HomeDrawerPanels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeDrawerPanels.swift; sourceTree = "<group>"; };
+		AA000000 /* Lilith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lilith.swift; sourceTree = "<group>"; };
+		AA000002 /* Lilith.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lilith.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA00000F /* AuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
+		AA000010 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		AA000011 /* CenterResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterResultView.swift; sourceTree = "<group>"; };
+		AA000012 /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
+		AA000013 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		AA000014 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		AA000015 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA000016 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
+		AA000017 /* ImageGenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenView.swift; sourceTree = "<group>"; };
+		AA000018 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		AA000019 /* LilithAnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithAnimatedView.swift; sourceTree = "<group>"; };
+		AA00001A /* LilithAudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithAudioManager.swift; sourceTree = "<group>"; };
+		AA00001B /* LilithMotionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithMotionModifier.swift; sourceTree = "<group>"; };
+		AA00001C /* LilithSpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithSpeechManager.swift; sourceTree = "<group>"; };
+		AA00001D /* LilithStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithStateManager.swift; sourceTree = "<group>"; };
+		AA00001E /* LilithTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithTheme.swift; sourceTree = "<group>"; };
+		AA00001F /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
+		AA000020 /* MediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewModel.swift; sourceTree = "<group>"; };
+		AA000021 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		AA000022 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		AA000023 /* SessionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStorage.swift; sourceTree = "<group>"; };
+		AA000024 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		AA000025 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		AA000026 /* VoidCoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidCoreView.swift; sourceTree = "<group>"; };
+		AA000027 /* WorkspaceShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceShellView.swift; sourceTree = "<group>"; };
+		AA000028 /* LilithIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LilithIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA000040 /* IntegrationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationModels.swift; sourceTree = "<group>"; };
+		AA000041 /* IntegrationAgentTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationAgentTypes.swift; sourceTree = "<group>"; };
+		AA000042 /* IntegrationAccountTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationAccountTypes.swift; sourceTree = "<group>"; };
+		AA000043 /* IntegrationCommunicationTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationCommunicationTypes.swift; sourceTree = "<group>"; };
+		AA000044 /* IntegrationSupportTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationSupportTypes.swift; sourceTree = "<group>"; };
+		CD21DB242E97CEBD51B732B3 /* VaultView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VaultView.swift; sourceTree = "<group>"; };
+		E28708C970503E336C7DA105 /* CenterInputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CenterInputView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA000004 = {
+			isa = PBXGroup;
+			children = (
+				AA000005 /* Lilith */,
+				AA000006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA000005 /* Lilith */ = {
+			isa = PBXGroup;
+			children = (
+				AA000050 /* Integration */,
+				AA000010 /* APIClient.swift */,
+				AA00000F /* AuthStore.swift */,
+				AA000011 /* CenterResultView.swift */,
+				AA000012 /* ChatModels.swift */,
+				AA000013 /* ChatView.swift */,
+				AA000014 /* ChatViewModel.swift */,
+				AA000015 /* ContentView.swift */,
+				AA000016 /* GlassCard.swift */,
+				AA000017 /* ImageGenView.swift */,
+				AA000018 /* KeyboardObserver.swift */,
+				AA000000 /* Lilith.swift */,
+				AA000019 /* LilithAnimatedView.swift */,
+				AA00001A /* LilithAudioManager.swift */,
+				AA00001B /* LilithMotionModifier.swift */,
+				AA00001C /* LilithSpeechManager.swift */,
+				AA00001D /* LilithStateManager.swift */,
+				AA00001E /* LilithTheme.swift */,
+				AA00001F /* MediaView.swift */,
+				AA000020 /* MediaViewModel.swift */,
+				AA000021 /* PrimaryButtonStyle.swift */,
+				AA000022 /* RootView.swift */,
+				AA000023 /* SessionStorage.swift */,
+				AA000024 /* VideoView.swift */,
+				AA000025 /* VideoViewModel.swift */,
+				AA000026 /* VoidCoreView.swift */,
+				AA000027 /* WorkspaceShellView.swift */,
+				8F9621B2B92E8CECC525ED87 /* VoidCanvasViewModel.swift */,
+				6832A7001DC963E4D960619F /* FloatingObjectView.swift */,
+				E28708C970503E336C7DA105 /* CenterInputView.swift */,
+				641C9AA974F9C4E35594970D /* ToolCategory.swift */,
+				4BEA425EAEAFA6940B04929B /* ToolLayerView.swift */,
+				0A3577B0FF4AB935E9684952 /* ProjectsView.swift */,
+				3F9366A4FB9F8410B2FD08C3 /* HistoryView.swift */,
+				07A3ACC3CCFF22DE21AA514C /* IDEView.swift */,
+				10817D020F6EEC457D41A7E2 /* CloneView.swift */,
+				58084D0D599977224630407D /* FloatingToolView.swift */,
+				CD21DB242E97CEBD51B732B3 /* VaultView.swift */,
+				2ED00A2946E62CCAAB032C71 /* LilithHomeView.swift */,
+				A5AF7E830F8656DC8EC2CDA7 /* HomeDrawerPanels.swift */,
+			);
+			path = Lilith;
+			sourceTree = "<group>";
+		};
+		AA000006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000002 /* Lilith.app */,
+				AA000028 /* LilithIntegration.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA000050 /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				AA000051 /* Core */,
+				AA000052 /* Account */,
+				AA000053 /* Communication */,
+				AA000054 /* Support */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
+		AA000051 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AA000041 /* IntegrationAgentTypes.swift */,
+				AA000040 /* IntegrationModels.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AA000052 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				AA000042 /* IntegrationAccountTypes.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		AA000053 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				AA000043 /* IntegrationCommunicationTypes.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		AA000054 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				AA000044 /* IntegrationSupportTypes.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA000007 /* Lilith */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000008 /* Build configuration list for PBXNativeTarget "Lilith" */;
+			buildPhases = (
+				AA000009 /* Sources */,
+				AA000003 /* Frameworks */,
+				AA00000A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lilith;
+			productName = Lilith;
+			productReference = AA000002 /* Lilith.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA000029 /* LilithIntegration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000033 /* Build configuration list for PBXNativeTarget "LilithIntegration" */;
+			buildPhases = (
+				AA000032 /* Sources */,
+				AA000030 /* Frameworks */,
+				AA000031 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LilithIntegration;
+			productName = LilithIntegration;
+			productReference = AA000028 /* LilithIntegration.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA00000B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = AA00000C /* Build configuration list for PBXProject "Lilith" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA000004;
+			productRefGroup = AA000006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA000007 /* Lilith */,
+				AA000029 /* LilithIntegration */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA00000A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000031 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA000009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA10000F /* AuthStore.swift in Sources */,
+				AA100001 /* Lilith.swift in Sources */,
+				AA10001C /* LilithSpeechManager.swift in Sources */,
+				AA10001D /* LilithStateManager.swift in Sources */,
+				AA10001E /* LilithTheme.swift in Sources */,
+				AA100022 /* RootView.swift in Sources */,
+				AA100023 /* SessionStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB200003 /* APIClient.swift in Sources */,
+				AB200002 /* AuthStore.swift in Sources */,
+				AB200004 /* CenterResultView.swift in Sources */,
+				AB200005 /* ChatModels.swift in Sources */,
+				AB200006 /* ChatView.swift in Sources */,
+				AB200007 /* ChatViewModel.swift in Sources */,
+				AB200008 /* ContentView.swift in Sources */,
+				AB200009 /* GlassCard.swift in Sources */,
+				AB20000A /* ImageGenView.swift in Sources */,
+				AB20000B /* KeyboardObserver.swift in Sources */,
+				AB200001 /* Lilith.swift in Sources */,
+				AB20000C /* LilithAnimatedView.swift in Sources */,
+				AB20000D /* LilithAudioManager.swift in Sources */,
+				AB20000E /* LilithMotionModifier.swift in Sources */,
+				AB20000F /* LilithSpeechManager.swift in Sources */,
+				AB200010 /* LilithStateManager.swift in Sources */,
+				AB200011 /* LilithTheme.swift in Sources */,
+				AB200012 /* MediaView.swift in Sources */,
+				AB200013 /* MediaViewModel.swift in Sources */,
+				AB200014 /* PrimaryButtonStyle.swift in Sources */,
+				AB200015 /* RootView.swift in Sources */,
+				AB200016 /* SessionStorage.swift in Sources */,
+				AB200017 /* VideoView.swift in Sources */,
+				AB200018 /* VideoViewModel.swift in Sources */,
+				AB200019 /* VoidCoreView.swift in Sources */,
+				AB20001B /* IntegrationModels.swift in Sources */,
+				AB20001C /* IntegrationAgentTypes.swift in Sources */,
+				AB20001D /* IntegrationAccountTypes.swift in Sources */,
+				AB20001E /* IntegrationCommunicationTypes.swift in Sources */,
+				AB20001F /* IntegrationSupportTypes.swift in Sources */,
+				613FE39C68D949567581D213 /* VoidCanvasViewModel.swift in Sources */,
+				32A60F80908DB223DF01227B /* FloatingObjectView.swift in Sources */,
+				280835EA7614BCFB2E54E6B4 /* CenterInputView.swift in Sources */,
+				E596FB43BF6473DD9CE1D506 /* ToolCategory.swift in Sources */,
+				A0D3EE9386359CA7206B45EC /* ToolLayerView.swift in Sources */,
+				002A2E3DD287566BD16A4491 /* ProjectsView.swift in Sources */,
+				93F523E8B4F33B0C685F4F0B /* HistoryView.swift in Sources */,
+				6E4D82B3B4B83C35409AA575 /* IDEView.swift in Sources */,
+				85FB421C05C0341F0F24ED72 /* CloneView.swift in Sources */,
+				587EEE579A8D32EAD9261031 /* FloatingToolView.swift in Sources */,
+				8F7A1E7FB22EC55969DDBBD4 /* VaultView.swift in Sources */,
+				67B6B45AB1D79405E0285163 /* LilithHomeView.swift in Sources */,
+				9C6CFEC2C68594A15EC7AAE9 /* HomeDrawerPanels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA00000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lilith/Preview Content\"";
+				DEVELOPMENT_TEAM = 46PM2SB7NF;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lilith.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA00000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lilith/Preview Content\"";
+				DEVELOPMENT_TEAM = 46PM2SB7NF;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lilith.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA000034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lilith/Preview Content\"";
+				DEVELOPMENT_TEAM = 46PM2SB7NF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lilith.app.integration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) LILITH_INTEGRATION";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA000035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lilith/Preview Content\"";
+				DEVELOPMENT_TEAM = 46PM2SB7NF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lilith.app.integration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) LILITH_INTEGRATION";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000008 /* Build configuration list for PBXNativeTarget "Lilith" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00000D /* Debug */,
+				AA00000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA00000C /* Build configuration list for PBXProject "Lilith" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00000D /* Debug */,
+				AA00000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000033 /* Build configuration list for PBXNativeTarget "LilithIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000034 /* Debug */,
+				AA000035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA00000B /* Project object */;
+}
