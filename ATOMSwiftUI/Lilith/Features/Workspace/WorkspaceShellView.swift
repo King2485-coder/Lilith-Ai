@@ -526,6 +526,14 @@ struct WorkspaceShellView: View {
                     Text("Devices: \(mesh.discoveredDevices.count)")
                         .foregroundColor(.white.opacity(0.8))
                         .font(.caption)
+
+                    if let first = mesh.discoveredDevices.first, !mesh.isConnected {
+                        Button("Connect") {
+                            mesh.connect(to: first)
+                        }
+                        .foregroundColor(.blue)
+                        .font(.caption.weight(.semibold))
+                    }
                 }
                 .padding(10)
                 .background(Color.black.opacity(0.3))

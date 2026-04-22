@@ -8,12 +8,14 @@ final class LilithBluetoothMesh: NSObject, ObservableObject {
     // MARK: - Published state
 
     @Published private(set) var isScanning = false
+    @Published private(set) var isConnected = false
     @Published private(set) var discoveredDevices: [CBPeripheral] = []
 
     // MARK: - Private
 
     private var centralManager: CBCentralManager?
     private var peripheralManager: CBPeripheralManager?
+    private var connectedPeripheral: CBPeripheral?
 
     private static let meshServiceUUID = CBUUID(string: "A1B2C3D4-E5F6-7890-ABCD-EF1234567890")
 
@@ -52,6 +54,12 @@ final class LilithBluetoothMesh: NSObject, ObservableObject {
         ])
     }
 
+    /// Connects to a discovered peripheral.
+    func connect(to peripheral: CBPeripheral) {
+        connectedPeripheral = peripheral
+        centralManager?.connect(peripheral, options: nil)
+    }
+
     /// Stops all mesh activity and clears discovered devices.
     func stopMesh() {
         centralManager?.stopScan()
@@ -84,8 +92,17 @@ extension LilithBluetoothMesh: CBCentralManagerDelegate {
         discoveredDevices.append(peripheral)
     }
 
+    func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+        print("✅ Connected to \(peripheral.name ?? "Unknown")")
+        isConnected = true
+    }
+
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         discoveredDevices.removeAll { $0.identifier == peripheral.identifier }
+        if connectedPeripheral?.identifier == peripheral.identifier {
+            connectedPeripheral = nil
+            isConnected = false
+        }
     }
 }
 
