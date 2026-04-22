@@ -40,6 +40,8 @@ targets:
     platform: iOS
     sources:
       - path: Lilith
+        excludes:
+          - App/LiquidWarp.metal
       - path: Assets.xcassets
     settings:
       base:

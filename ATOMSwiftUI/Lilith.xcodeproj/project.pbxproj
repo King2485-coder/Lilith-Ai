@@ -73,7 +73,6 @@
 		BDF4D223E73CEB3709055B61 /* LilithRealtimeVoidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBAE311E7CE230AD17C3B90 /* LilithRealtimeVoidView.swift */; };
 		C41E93E94955019E1F9E43B4 /* CloneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B93B07496A6789F6BCB9E11 /* CloneViewModel.swift */; };
 		CC73E3AE5F7DC84704F5B4AC /* LilithMainBodyCinematic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2840B7DDE24339E3EE2C2 /* LilithMainBodyCinematic.swift */; };
-		CD796247563B37B2B4D8A390 /* LiquidWarp.metal in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC533A8C2AFE73B1E120F /* LiquidWarp.metal */; };
 		D0F01368B174F7B024CECB97 /* CombinedChatIDEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86116F01F65A3D61987615F /* CombinedChatIDEView.swift */; };
 		D3E17C77C27C63335D302E7C /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03972D716694BD7712CB3BB4 /* PrimaryButtonStyle.swift */; };
 		D9F9A24523446BDC97DB014F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE192054D2E496061EB8ACE /* RootView.swift */; };
@@ -171,7 +170,6 @@
 		EA9F3AC1EB87B3B0DB4D468F /* WorkspaceShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceShellView.swift; sourceTree = "<group>"; };
 		EBD28B651BDD56093CBB67B6 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
 		EEFC588D218E55654055E9DC /* LilithScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithScheduler.swift; sourceTree = "<group>"; };
-		EEFCC533A8C2AFE73B1E120F /* LiquidWarp.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LiquidWarp.metal; sourceTree = "<group>"; };
 		EF63151A3BBF8F11E859966C /* ProjectModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModels.swift; sourceTree = "<group>"; };
 		EFCC34747428102BE5EEE570 /* LinuxModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxModels.swift; sourceTree = "<group>"; };
 		F040D0DF1B20BAE9C304BCF8 /* LilithStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithStateManager.swift; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 				EEFC588D218E55654055E9DC /* LilithScheduler.swift */,
 				AFEAD9929DA29ECB395EED0F /* LilithVectorMemory.swift */,
 				03D627940428CBD32062D178 /* LilithWorkflowEngine.swift */,
-				EEFCC533A8C2AFE73B1E120F /* LiquidWarp.metal */,
 				3FE192054D2E496061EB8ACE /* RootView.swift */,
 			);
 			path = App;
@@ -614,7 +611,6 @@
 				6C94A8EC41162708E218ED07 /* LinuxModels.swift in Sources */,
 				721ECCF2A751F159B56F60C7 /* LinuxSystemMonitorView.swift in Sources */,
 				5EE9B0EE7729B88E8BB48119 /* LinuxTerminalView.swift in Sources */,
-				CD796247563B37B2B4D8A390 /* LiquidWarp.metal in Sources */,
 				5DB4F3CA3EA4CB5BCF162B69 /* LoginView.swift in Sources */,
 				EF40C1BA6E8A300335AA76AE /* MediaView.swift in Sources */,
 				240124232DE66F425FEDEAE7 /* MediaViewModel.swift in Sources */,
