@@ -10,11 +10,11 @@
 		02DE5B6524D4DE05DE8388D7 /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D74F78FB3BA5412FBA310 /* AuthStore.swift */; };
 		0354E351951878DD8871743B /* AgentSelectorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5829CC82D2B6FA79AD82859 /* AgentSelectorSheet.swift */; };
 		047BB743F468A3DAC3B5D2F6 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E55F57230A83FE776F58B0 /* AVKit.framework */; };
-		L3M4N5O6P7Q8R9S0T1U2V3W4 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = K2L3M4N5O6P7Q8R9S0T1U2V3 /* EventKit.framework */; };
 		07B8E8DBBBBABE19E4267626 /* LilithMotionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61C289FD9628526252F801 /* LilithMotionModifier.swift */; };
 		0991115BA6310D0136E16323 /* LilithView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227AE9FE475C0284F5D5713 /* LilithView.swift */; };
 		104BC3B3A4E4D702B3A04DF5 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459AB97C30B1F3602F03C09B /* ProjectsView.swift */; };
 		1872E313D829F6D372533B93 /* IDEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D3A83CD9CE46E41AFFDD6F /* IDEView.swift */; };
+		198DC3BDA7AE4C49989AB128 /* LinuxSystemMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C5F98954724451ADB4071A /* LinuxSystemMonitorView.swift */; };
 		1BE6B4717CC658A063B587C9 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BE6E365D96220BA152980 /* VideoView.swift */; };
 		240124232DE66F425FEDEAE7 /* MediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53D40E0C481AA050769E157 /* MediaViewModel.swift */; };
 		2612CBD6B14861B1777C00BF /* ProjectModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63151A3BBF8F11E859966C /* ProjectModels.swift */; };
@@ -27,20 +27,22 @@
 		3251C02CAECC60DA020D66C9 /* Voice/LilithRealtimeVoidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984F1BD11098A67E7A49D359 /* Voice/LilithRealtimeVoidView.swift */; };
 		3A8648EF113567CCCC1B4FEA /* LilithStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F040D0DF1B20BAE9C304BCF8 /* LilithStateManager.swift */; };
 		3B4E555B3516AEEB42ACB245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01ADE1D9C4145280FB968852 /* Assets.xcassets */; };
+		3C0C0FA61F334A7193AFC378 /* LinuxFileManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1D52360EE49A8ADCA96F3 /* LinuxFileManagerView.swift */; };
 		3CD3B0A92F9626A000512D23 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 3CD3B0A82F9626A000512D23 /* WebRTC */; };
 		3FEEFBBE0135F4725E97360F /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26076785D390A61352116E01 /* AccountViewModel.swift */; };
 		438B772C1855599E06FD3F82 /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA48D6E38BB905DA6E6B65 /* ChatModels.swift */; };
 		48AC92783BEBDA30D900394A /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD28B651BDD56093CBB67B6 /* GlassCard.swift */; };
 		4DA7B25678B346A01D030F82 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA68C7F9999BC1FAFBA9B43 /* ProjectsViewModel.swift */; };
 		4E2DD4E9D08FDFD2DBBAD9B8 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD6925FC8A32CD6F5F65FE /* ChatViewModel.swift */; };
-		50BC45F2EC428E2B98D96204 /* atom_neutral.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDF0AD65ACDBFD60D513643 /* atom_neutral.png */; };
 		563FC92C6BE1777035F3E141 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F15670040630DCB1154F8 /* KeyboardObserver.swift */; };
 		5C24C6128B02E0D498FE421A /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A9EFB8AA6C07E52A9DA75 /* AuthModels.swift */; };
 		5DB4F3CA3EA4CB5BCF162B69 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F067716EBCF83EC24B0FD4 /* LoginView.swift */; };
+		6C1AD93AA8544AB1A4F25675 /* LTEVoIPDialerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E27ED52665849BD856D30A0 /* LTEVoIPDialerView.swift */; };
 		7291A6B0E6AB2A92157CD198 /* Lilith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824CDF5E9147DF68F8DE0316 /* Lilith.swift */; };
 		730401A2C59C56C76F9DBF0F /* LilithAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FD869C5471E1986C576B31 /* LilithAudioManager.swift */; };
 		74CF4DBC4BD0289651571783 /* SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09856996199E5FAFE874E5A /* SessionStorage.swift */; };
 		77BF58CF0EFCF6741464588F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C53423141F6C67754D875 /* RegisterView.swift */; };
+		7B88F2D06ABA496AA285F9D4 /* LTENetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840010DE9AA48EE81A6E161 /* LTENetworkView.swift */; };
 		814D9DAFDE6B15B9F664DEA8 /* app.html in Resources */ = {isa = PBXBuildFile; fileRef = F9B6D9B2C51C306D246CF248 /* app.html */; };
 		8345482F788AFC9D91356761 /* ImageGenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BBE71395077A5E6D77A0C3 /* ImageGenView.swift */; };
 		8438D20BF3A4609A9F064D96 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9637E9D94CA8351B59F8F /* HistoryViewModel.swift */; };
@@ -48,62 +50,56 @@
 		87E82A13DAECD86CD8877CF6 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FC1FE14D0B8685CBB8CC67 /* VideoViewModel.swift */; };
 		89482F9436BD5DE13F50A95B /* WorkspaceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4453865DC0D755FF5FA7C4 /* WorkspaceModels.swift */; };
 		8B730371088996811BBB0F4F /* LilithAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8682424EBECF9E86B6E20 /* LilithAnimatedView.swift */; };
+		8B786F5CE41848CC9C6A13D1 /* LinuxModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC6CD788A2E423AB295421C /* LinuxModels.swift */; };
 		8D7B4617B306539A1674F121 /* LilithSpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA2671155103173FDC6FDC /* LilithSpeechManager.swift */; };
 		8D7B4617B306539A1674F122 /* Voice/LilithVoiceAssistantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA2671155103173FDC6FDD /* Voice/LilithVoiceAssistantService.swift */; };
 		90F17D8D8718919CF249DD97 /* LilithTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DB5BEB273127B38D6318D /* LilithTheme.swift */; };
 		99819882CC94F01A9BF0F3E9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03919BB021827B54148A07E /* WebKit.framework */; };
+		9FAE7E5E52B84BC791F79D4D /* LinuxTerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC5A3F579F41DDA71A6039 /* LinuxTerminalView.swift */; };
 		A1B2C3D4E5F60001A2B3C4D5 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002A2B3C4D5 /* ServerManager.swift */; };
 		A291C5390DB6276375B1F732 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E482D3F6BB0EDB3C7AE11 /* ChatView.swift */; };
 		A5D0B789F04B94096DB55DFF /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = D7D6DD9C4A0109025E912918 /* script.js */; };
 		A6E95620D4ED130648BCA00C /* WorkspaceShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F3AC1EB87B3B0DB4D468F /* WorkspaceShellView.swift */; };
 		A7FCD70FA60128ACB2D61E7B /* LilithLaunchPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A49B6A7D9EBF0E661C796 /* LilithLaunchPro.swift */; };
 		A8298E77E9D885BFC0F11F4E /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = 12203732125D4A208B2462D2 /* main.py */; };
-					B2C3D4E5F6A7B8C9D0E1F2A3 /* LilithMainBodyCinematic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C2D3E4F5A6B7C8D9E0F1A2 /* LilithMainBodyCinematic.swift */; };
-					B3C4D5E6F7A8B9C0D1E2F3A4 /* LilithProactiveEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B3C4D5E6F7A8B9C0D1E2F3 /* LilithProactiveEngine.swift */; };
-					D5E6F7A8B9C0D1E2F3A4B5C6 /* LilithVectorMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5E6F7A8B9C0D1E2F3A4B5 /* LilithVectorMemory.swift */; };
-					F7A8B9C0D1E2F3A4B5C6D7E8 /* LilithAutonomousEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F7A8B9C0D1E2F3A4B5C6D7 /* LilithAutonomousEngine.swift */; };
-					H9I0J1K2L3M4N5O6P7Q8R9S0 /* LilithAutonomousGPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = G8H9I0J1K2L3M4N5O6P7Q8R9 /* LilithAutonomousGPT.swift */; };
-					J1K2L3M4N5O6P7Q8R9S0T1U2 /* LilithActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = I0J1K2L3M4N5O6P7Q8R9S0T1 /* LilithActionManager.swift */; };
-					N5O6P7Q8R9S0T1U2V3W4X5Y6 /* LilithScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = M4N5O6P7Q8R9S0T1U2V3W4X5 /* LilithScheduler.swift */; };
-					P7Q8R9S0T1U2V3W4X5Y6Z7A8 /* LilithAdvancedScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = O6P7Q8R9S0T1U2V3W4X5Y6Z7 /* LilithAdvancedScheduler.swift */; };
-					R9S0T1U2V3W4X5Y6Z7A8B9C0 /* LilithDayPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = Q8R9S0T1U2V3W4X5Y6Z7A8B9 /* LilithDayPlanner.swift */; };
-					T1U2V3W4X5Y6Z7A8B9C0D1E2 /* LilithRealtimeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = S0T1U2V3W4X5Y6Z7A8B9C0D1 /* LilithRealtimeEngine.swift */; };
-					V3W4X5Y6Z7A8B9C0D1E2F3G4 /* LilithContextEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = U2V3W4X5Y6Z7A8B9C0D1E2F3 /* LilithContextEngine.swift */; };
-					X5Y6Z7A8B9C0D1E2F3G4H5I6 /* LilithPersonalityEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = W4X5Y6Z7A8B9C0D1E2F3G4H5 /* LilithPersonalityEngine.swift */; };
-					Z7A8B9C0D1E2F3G4H5I6J7K8 /* LilithRelationshipEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = Y6Z7A8B9C0D1E2F3G4H5I6J7 /* LilithRelationshipEngine.swift */; };
-					B9C0D1E2F3G4H5I6J7K8L9M0 /* LilithWorkflowEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9C0D1E2F3G4H5I6J7K8L9 /* LilithWorkflowEngine.swift */; };
-						D4E5F6A7B8C9D0E1F2A3B4C5 /* LilithRootSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4E5F6A7B8C9D0E1F2A3B4 /* LilithRootSystem.swift */; };
-						F6A7B8C9D0E1F2A3B4C5D6E7 /* LiquidWarp.metal in Sources */ = {isa = PBXBuildFile; fileRef = E5F6A7B8C9D0E1F2A3B4C5D6 /* LiquidWarp.metal */; };
-			ADF35A72502D1B08934D0FDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34926D144830636645ADE35C /* ContentView.swift */; };
+		ADF35A72502D1B08934D0FDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34926D144830636645ADE35C /* ContentView.swift */; };
+		B2C3D4E5F6A7B8C9D0E1F2A3 /* LilithMainBodyCinematic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C2D3E4F5A6B7C8D9E0F1A2 /* LilithMainBodyCinematic.swift */; };
+		B3C4D5E6F7A8B9C0D1E2F3A4 /* LilithProactiveEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B3C4D5E6F7A8B9C0D1E2F3 /* LilithProactiveEngine.swift */; };
 		B7C8D9E0F1A2B3C5 /* LilithSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C8D9E0F1A2B3C4 /* LilithSystem.swift */; };
 		B7E07A98EBE54F9B51BC916B /* IDEViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B23C135C8354C56830E5D /* IDEViewModel.swift */; };
+		B9C0D1E2F3G4H5I6J7K8L9M0 /* LilithWorkflowEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9C0D1E2F3G4H5I6J7K8L9 /* LilithWorkflowEngine.swift */; };
 		C41E93E94955019E1F9E43B4 /* CloneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B93B07496A6789F6BCB9E11 /* CloneViewModel.swift */; };
 		C7D9E0F1A2B3C4D6 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D9E0F1A2B3C4D5 /* CallManager.swift */; };
-		C90E63E4ACA3E1E31D8DB5B2 /* atom_thinking.png in Resources */ = {isa = PBXBuildFile; fileRef = 884BFC8F9943FD0AA564E20C /* atom_thinking.png */; };
 		CD7957BE442540EB4DAE51BE /* main.cpython-311.pyc in Resources */ = {isa = PBXBuildFile; fileRef = CBABD1A1A94D5A09EF078962 /* main.cpython-311.pyc */; };
 		D0F01368B174F7B024CECB97 /* CombinedChatIDEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86116F01F65A3D61987615F /* CombinedChatIDEView.swift */; };
 		D3E17C77C27C63335D302E7C /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03972D716694BD7712CB3BB4 /* PrimaryButtonStyle.swift */; };
+		D4E5F6A7B8C9D0E1F2A3B4C5 /* LilithRootSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4E5F6A7B8C9D0E1F2A3B4 /* LilithRootSystem.swift */; };
+		D5E6F7A8B9C0D1E2F3A4B5C6 /* LilithVectorMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5E6F7A8B9C0D1E2F3A4B5 /* LilithVectorMemory.swift */; };
 		D8E0F1A2B3C4D5E7 /* WebRTCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E0F1A2B3C4D5E6 /* WebRTCManager.swift */; };
 		D9F9A24523446BDC97DB014F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE192054D2E496061EB8ACE /* RootView.swift */; };
-		DC16710C15073097C43AA731 /* atom_smirk.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4A6CA941F5D7AD26FE0E53 /* atom_smirk.png */; };
+		DE442359148645B5AF75114F /* LinuxAddMachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D6E17B965E4D6AA1B15775 /* LinuxAddMachineView.swift */; };
 		E1A2B3C4D5E6F702 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2B3C4D5E6F701 /* CallView.swift */; };
 		E1A2B3C4D5E6F704 /* WebRTCVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2B3C4D5E6F703 /* WebRTCVideoView.swift */; };
 		E322EDD957BABAF4A4E4E48C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F7BFAF40173F6CA1D80B7D /* AccountView.swift */; };
+		E44135C65729484CA82CB156 /* LTEModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2637919C6F406B87849F89 /* LTEModels.swift */; };
 		E61CA28E08E1776595B214A4 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = EA15C291922663E497CB2665 /* styles.css */; };
+		E8D50D0DF37F412999FAE30A /* LinuxMachinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EAF975D2B04B7A9F5CDB26 /* LinuxMachinesView.swift */; };
 		E938F5402D041E4CA38F197A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = BB349B2D3FCB0FAFD875FAFC /* index.html */; };
 		EF40C1BA6E8A300335AA76AE /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA7A5B59138D51EBBFDCD1A /* MediaView.swift */; };
+		F7A8B9C0D1E2F3A4B5C6D7E8 /* LilithAutonomousEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F7A8B9C0D1E2F3A4B5C6D7 /* LilithAutonomousEngine.swift */; };
 		FB46C2E461296B12936EFC05 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183F3D9F8013660A5A07963 /* HistoryView.swift */; };
 		FC79BC7E4CA570484B8035AD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6767BA950AA3893C744A8 /* README.md */; };
-			8B786F5CE41848CC9C6A13D1 /* LinuxModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC6CD788A2E423AB295421C /* LinuxModels.swift */; };
-			E8D50D0DF37F412999FAE30A /* LinuxMachinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EAF975D2B04B7A9F5CDB26 /* LinuxMachinesView.swift */; };
-			DE442359148645B5AF75114F /* LinuxAddMachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D6E17B965E4D6AA1B15775 /* LinuxAddMachineView.swift */; };
-			9FAE7E5E52B84BC791F79D4D /* LinuxTerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC5A3F579F41DDA71A6039 /* LinuxTerminalView.swift */; };
-			198DC3BDA7AE4C49989AB128 /* LinuxSystemMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C5F98954724451ADB4071A /* LinuxSystemMonitorView.swift */; };
-			3C0C0FA61F334A7193AFC378 /* LinuxFileManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1D52360EE49A8ADCA96F3 /* LinuxFileManagerView.swift */; };
-					E44135C65729484CA82CB156 /* LTEModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2637919C6F406B87849F89 /* LTEModels.swift */; };
-			7B88F2D06ABA496AA285F9D4 /* LTENetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840010DE9AA48EE81A6E161 /* LTENetworkView.swift */; };
-			6C1AD93AA8544AB1A4F25675 /* LTEVoIPDialerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E27ED52665849BD856D30A0 /* LTEVoIPDialerView.swift */; };
-		/* End PBXBuildFile section */
+		H9I0J1K2L3M4N5O6P7Q8R9S0 /* LilithAutonomousGPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = G8H9I0J1K2L3M4N5O6P7Q8R9 /* LilithAutonomousGPT.swift */; };
+		J1K2L3M4N5O6P7Q8R9S0T1U2 /* LilithActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = I0J1K2L3M4N5O6P7Q8R9S0T1 /* LilithActionManager.swift */; };
+		L3M4N5O6P7Q8R9S0T1U2V3W4 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = K2L3M4N5O6P7Q8R9S0T1U2V3 /* EventKit.framework */; };
+		N5O6P7Q8R9S0T1U2V3W4X5Y6 /* LilithScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = M4N5O6P7Q8R9S0T1U2V3W4X5 /* LilithScheduler.swift */; };
+		P7Q8R9S0T1U2V3W4X5Y6Z7A8 /* LilithAdvancedScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = O6P7Q8R9S0T1U2V3W4X5Y6Z7 /* LilithAdvancedScheduler.swift */; };
+		R9S0T1U2V3W4X5Y6Z7A8B9C0 /* LilithDayPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = Q8R9S0T1U2V3W4X5Y6Z7A8B9 /* LilithDayPlanner.swift */; };
+		T1U2V3W4X5Y6Z7A8B9C0D1E2 /* LilithRealtimeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = S0T1U2V3W4X5Y6Z7A8B9C0D1 /* LilithRealtimeEngine.swift */; };
+		V3W4X5Y6Z7A8B9C0D1E2F3G4 /* LilithContextEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = U2V3W4X5Y6Z7A8B9C0D1E2F3 /* LilithContextEngine.swift */; };
+		X5Y6Z7A8B9C0D1E2F3G4H5I6 /* LilithPersonalityEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = W4X5Y6Z7A8B9C0D1E2F3G4H5 /* LilithPersonalityEngine.swift */; };
+		Z7A8B9C0D1E2F3G4H5I6J7K8 /* LilithRelationshipEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = Y6Z7A8B9C0D1E2F3G4H5I6J7 /* LilithRelationshipEngine.swift */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01ADE1D9C4145280FB968852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,49 +107,35 @@
 		03972D716694BD7712CB3BB4 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		0B93B07496A6789F6BCB9E11 /* CloneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneViewModel.swift; sourceTree = "<group>"; };
 		12203732125D4A208B2462D2 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		13E1D52360EE49A8ADCA96F3 /* LinuxFileManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxFileManagerView.swift; sourceTree = "<group>"; };
 		1CA7A5B59138D51EBBFDCD1A /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
 		26076785D390A61352116E01 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		2BE6767BA950AA3893C744A8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2DDA48D6E38BB905DA6E6B65 /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
 		31FC1FE14D0B8685CBB8CC67 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
 		3227AE9FE475C0284F5D5713 /* LilithView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithView.swift; sourceTree = "<group>"; };
-						A1C2D3E4F5A6B7C8D9E0F1A2 /* LilithMainBodyCinematic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithMainBodyCinematic.swift; sourceTree = "<group>"; };
-						A2B3C4D5E6F7A8B9C0D1E2F3 /* LilithProactiveEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithProactiveEngine.swift; sourceTree = "<group>"; };
-						C4D5E6F7A8B9C0D1E2F3A4B5 /* LilithVectorMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithVectorMemory.swift; sourceTree = "<group>"; };
-						E6F7A8B9C0D1E2F3A4B5C6D7 /* LilithAutonomousEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithAutonomousEngine.swift; sourceTree = "<group>"; };
-						G8H9I0J1K2L3M4N5O6P7Q8R9 /* LilithAutonomousGPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithAutonomousGPT.swift; sourceTree = "<group>"; };
-						I0J1K2L3M4N5O6P7Q8R9S0T1 /* LilithActionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithActionManager.swift; sourceTree = "<group>"; };
-						M4N5O6P7Q8R9S0T1U2V3W4X5 /* LilithScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithScheduler.swift; sourceTree = "<group>"; };
-						O6P7Q8R9S0T1U2V3W4X5Y6Z7 /* LilithAdvancedScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithAdvancedScheduler.swift; sourceTree = "<group>"; };
-						Q8R9S0T1U2V3W4X5Y6Z7A8B9 /* LilithDayPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithDayPlanner.swift; sourceTree = "<group>"; };
-						S0T1U2V3W4X5Y6Z7A8B9C0D1 /* LilithRealtimeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithRealtimeEngine.swift; sourceTree = "<group>"; };
-						U2V3W4X5Y6Z7A8B9C0D1E2F3 /* LilithContextEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithContextEngine.swift; sourceTree = "<group>"; };
-						W4X5Y6Z7A8B9C0D1E2F3G4H5 /* LilithPersonalityEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithPersonalityEngine.swift; sourceTree = "<group>"; };
-						Y6Z7A8B9C0D1E2F3G4H5I6J7 /* LilithRelationshipEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithRelationshipEngine.swift; sourceTree = "<group>"; };
-						A8B9C0D1E2F3G4H5I6J7K8L9 /* LilithWorkflowEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithWorkflowEngine.swift; sourceTree = "<group>"; };
-								C3D4E5F6A7B8C9D0E1F2A3B4 /* LilithRootSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithRootSystem.swift; sourceTree = "<group>"; };
-								E5F6A7B8C9D0E1F2A3B4C5D6 /* LiquidWarp.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LiquidWarp.metal; sourceTree = "<group>"; };
-				34926D144830636645ADE35C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34926D144830636645ADE35C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3A38B69FBF954BA2BA4A11A1 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		3E61C289FD9628526252F801 /* LilithMotionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithMotionModifier.swift; sourceTree = "<group>"; };
-		3F4A6CA941F5D7AD26FE0E53 /* atom_smirk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = atom_smirk.png; sourceTree = "<group>"; };
 		3FE192054D2E496061EB8ACE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		42E55F57230A83FE776F58B0 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		K2L3M4N5O6P7Q8R9S0T1U2V3 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		430A49B6A7D9EBF0E661C796 /* LilithLaunchPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithLaunchPro.swift; sourceTree = "<group>"; };
 		459AB97C30B1F3602F03C09B /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		462D74F78FB3BA5412FBA310 /* AuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
 		46AD6925FC8A32CD6F5F65FE /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		46D3A83CD9CE46E41AFFDD6F /* IDEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDEView.swift; sourceTree = "<group>"; };
+		46EAF975D2B04B7A9F5CDB26 /* LinuxMachinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMachinesView.swift; sourceTree = "<group>"; };
 		4840E42583840E2A6A3B1F12 /* LilithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LilithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F067716EBCF83EC24B0FD4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		55D6E17B965E4D6AA1B15775 /* LinuxAddMachineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxAddMachineView.swift; sourceTree = "<group>"; };
 		5E58F306D66FC08D2F513508 /* CloneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneView.swift; sourceTree = "<group>"; };
 		604A9EFB8AA6C07E52A9DA75 /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		60BC5A3F579F41DDA71A6039 /* LinuxTerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxTerminalView.swift; sourceTree = "<group>"; };
+		6E27ED52665849BD856D30A0 /* LTEVoIPDialerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTEVoIPDialerView.swift; sourceTree = "<group>"; };
 		6F4453865DC0D755FF5FA7C4 /* WorkspaceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceModels.swift; sourceTree = "<group>"; };
 		7EA2C9717B280930ADD26CEE /* SubscriptionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSheet.swift; sourceTree = "<group>"; };
 		824CDF5E9147DF68F8DE0316 /* Lilith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lilith.swift; sourceTree = "<group>"; };
 		878F15670040630DCB1154F8 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
-		884BFC8F9943FD0AA564E20C /* atom_thinking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = atom_thinking.png; sourceTree = "<group>"; };
 		984F1BD11098A67E7A49D356 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		984F1BD11098A67E7A49D357 /* Voice/LilithVoiceConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice/LilithVoiceConsoleView.swift; sourceTree = "<group>"; };
 		984F1BD11098A67E7A49D358 /* Voice/ServerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice/ServerSettingsView.swift; sourceTree = "<group>"; };
@@ -161,15 +143,21 @@
 		A03919BB021827B54148A07E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A09856996199E5FAFE874E5A /* SessionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStorage.swift; sourceTree = "<group>"; };
 		A1B2C3D4E5F60002A2B3C4D5 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		A1C2D3E4F5A6B7C8D9E0F1A2 /* LilithMainBodyCinematic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithMainBodyCinematic.swift; sourceTree = "<group>"; };
+		A2B3C4D5E6F7A8B9C0D1E2F3 /* LilithProactiveEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithProactiveEngine.swift; sourceTree = "<group>"; };
 		A7F7BFAF40173F6CA1D80B7D /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		A8B9C0D1E2F3G4H5I6J7K8L9 /* LilithWorkflowEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithWorkflowEngine.swift; sourceTree = "<group>"; };
 		ADEA2671155103173FDC6FDC /* LilithSpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithSpeechManager.swift; sourceTree = "<group>"; };
 		ADEA2671155103173FDC6FDD /* Voice/LilithVoiceAssistantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice/LilithVoiceAssistantService.swift; sourceTree = "<group>"; };
 		B5829CC82D2B6FA79AD82859 /* AgentSelectorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentSelectorSheet.swift; sourceTree = "<group>"; };
 		B7C8D9E0F1A2B3C4 /* LilithSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithSystem.swift; sourceTree = "<group>"; };
 		BAA68C7F9999BC1FAFBA9B43 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
+		BAC6CD788A2E423AB295421C /* LinuxModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxModels.swift; sourceTree = "<group>"; };
 		BB349B2D3FCB0FAFD875FAFC /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		C11FFC8F83E8ADD11D9901DF /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		C183F3D9F8013660A5A07963 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		C3D4E5F6A7B8C9D0E1F2A3B4 /* LilithRootSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithRootSystem.swift; sourceTree = "<group>"; };
+		C4D5E6F7A8B9C0D1E2F3A4B5 /* LilithVectorMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithVectorMemory.swift; sourceTree = "<group>"; };
 		C53D40E0C481AA050769E157 /* MediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewModel.swift; sourceTree = "<group>"; };
 		C7D9E0F1A2B3C4D5 /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
 		C86116F01F65A3D61987615F /* CombinedChatIDEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedChatIDEView.swift; sourceTree = "<group>"; };
@@ -184,25 +172,30 @@
 		E1A2B3C4D5E6F701 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
 		E1A2B3C4D5E6F703 /* WebRTCVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCVideoView.swift; sourceTree = "<group>"; };
 		E3FD869C5471E1986C576B31 /* LilithAudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithAudioManager.swift; sourceTree = "<group>"; };
+		E5F6A7B8C9D0E1F2A3B4C5D6 /* LiquidWarp.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LiquidWarp.metal; sourceTree = "<group>"; };
+		E6F7A8B9C0D1E2F3A4B5C6D7 /* LilithAutonomousEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithAutonomousEngine.swift; sourceTree = "<group>"; };
+		E840010DE9AA48EE81A6E161 /* LTENetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTENetworkView.swift; sourceTree = "<group>"; };
 		EA15C291922663E497CB2665 /* styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
 		EA9F3AC1EB87B3B0DB4D468F /* WorkspaceShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceShellView.swift; sourceTree = "<group>"; };
 		EBD28B651BDD56093CBB67B6 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
-		EBDF0AD65ACDBFD60D513643 /* atom_neutral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = atom_neutral.png; sourceTree = "<group>"; };
+		EC2637919C6F406B87849F89 /* LTEModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTEModels.swift; sourceTree = "<group>"; };
 		EF63151A3BBF8F11E859966C /* ProjectModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModels.swift; sourceTree = "<group>"; };
 		F040D0DF1B20BAE9C304BCF8 /* LilithStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithStateManager.swift; sourceTree = "<group>"; };
 		F0BBE71395077A5E6D77A0C3 /* ImageGenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenView.swift; sourceTree = "<group>"; };
+		F2C5F98954724451ADB4071A /* LinuxSystemMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxSystemMonitorView.swift; sourceTree = "<group>"; };
 		F8D9637E9D94CA8351B59F8F /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		F9B6D9B2C51C306D246CF248 /* app.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = app.html; sourceTree = "<group>"; };
-			BAC6CD788A2E423AB295421C /* LinuxModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxModels.swift; sourceTree = "<group>"; };
-			46EAF975D2B04B7A9F5CDB26 /* LinuxMachinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMachinesView.swift; sourceTree = "<group>"; };
-			55D6E17B965E4D6AA1B15775 /* LinuxAddMachineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxAddMachineView.swift; sourceTree = "<group>"; };
-			60BC5A3F579F41DDA71A6039 /* LinuxTerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxTerminalView.swift; sourceTree = "<group>"; };
-			F2C5F98954724451ADB4071A /* LinuxSystemMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxSystemMonitorView.swift; sourceTree = "<group>"; };
-			13E1D52360EE49A8ADCA96F3 /* LinuxFileManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxFileManagerView.swift; sourceTree = "<group>"; };
-					EC2637919C6F406B87849F89 /* LTEModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTEModels.swift; sourceTree = "<group>"; };
-			E840010DE9AA48EE81A6E161 /* LTENetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTENetworkView.swift; sourceTree = "<group>"; };
-			6E27ED52665849BD856D30A0 /* LTEVoIPDialerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTEVoIPDialerView.swift; sourceTree = "<group>"; };
-		/* End PBXFileReference section */
+		G8H9I0J1K2L3M4N5O6P7Q8R9 /* LilithAutonomousGPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithAutonomousGPT.swift; sourceTree = "<group>"; };
+		I0J1K2L3M4N5O6P7Q8R9S0T1 /* LilithActionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithActionManager.swift; sourceTree = "<group>"; };
+		K2L3M4N5O6P7Q8R9S0T1U2V3 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		M4N5O6P7Q8R9S0T1U2V3W4X5 /* LilithScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithScheduler.swift; sourceTree = "<group>"; };
+		O6P7Q8R9S0T1U2V3W4X5Y6Z7 /* LilithAdvancedScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithAdvancedScheduler.swift; sourceTree = "<group>"; };
+		Q8R9S0T1U2V3W4X5Y6Z7A8B9 /* LilithDayPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithDayPlanner.swift; sourceTree = "<group>"; };
+		S0T1U2V3W4X5Y6Z7A8B9C0D1 /* LilithRealtimeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithRealtimeEngine.swift; sourceTree = "<group>"; };
+		U2V3W4X5Y6Z7A8B9C0D1E2F3 /* LilithContextEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithContextEngine.swift; sourceTree = "<group>"; };
+		W4X5Y6Z7A8B9C0D1E2F3G4H5 /* LilithPersonalityEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithPersonalityEngine.swift; sourceTree = "<group>"; };
+		Y6Z7A8B9C0D1E2F3G4H5I6J7 /* LilithRelationshipEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilithRelationshipEngine.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D914A01294C8CC3613F18F07 /* Frameworks */ = {
@@ -237,13 +230,36 @@
 				W4X5Y6Z7A8B9C0D1E2F3G4H5 /* LilithPersonalityEngine.swift */,
 				Y6Z7A8B9C0D1E2F3G4H5I6J7 /* LilithRelationshipEngine.swift */,
 				A8B9C0D1E2F3G4H5I6J7K8L9 /* LilithWorkflowEngine.swift */,
-						C3D4E5F6A7B8C9D0E1F2A3B4 /* LilithRootSystem.swift */,
-						E5F6A7B8C9D0E1F2A3B4C5D6 /* LiquidWarp.metal */,
-						34926D144830636645ADE35C /* ContentView.swift */,
+				C3D4E5F6A7B8C9D0E1F2A3B4 /* LilithRootSystem.swift */,
+				E5F6A7B8C9D0E1F2A3B4C5D6 /* LiquidWarp.metal */,
+				34926D144830636645ADE35C /* ContentView.swift */,
 				824CDF5E9147DF68F8DE0316 /* Lilith.swift */,
 				3FE192054D2E496061EB8ACE /* RootView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		0CD955E86ABF4B4891172FBF /* Linux */ = {
+			isa = PBXGroup;
+			children = (
+				BAC6CD788A2E423AB295421C /* LinuxModels.swift */,
+				46EAF975D2B04B7A9F5CDB26 /* LinuxMachinesView.swift */,
+				55D6E17B965E4D6AA1B15775 /* LinuxAddMachineView.swift */,
+				60BC5A3F579F41DDA71A6039 /* LinuxTerminalView.swift */,
+				F2C5F98954724451ADB4071A /* LinuxSystemMonitorView.swift */,
+				13E1D52360EE49A8ADCA96F3 /* LinuxFileManagerView.swift */,
+			);
+			path = Linux;
+			sourceTree = "<group>";
+		};
+		10B821F72B6F446CA14691A1 /* LTE */ = {
+			isa = PBXGroup;
+			children = (
+				EC2637919C6F406B87849F89 /* LTEModels.swift */,
+				E840010DE9AA48EE81A6E161 /* LTENetworkView.swift */,
+				6E27ED52665849BD856D30A0 /* LTEVoIPDialerView.swift */,
+			);
+			path = LTE;
 			sourceTree = "<group>";
 		};
 		1E4EF44AA3B0A2C1E7D425B2 /* __pycache__ */ = {
@@ -303,9 +319,6 @@
 		7591277C84B84ADAE7287CE2 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				EBDF0AD65ACDBFD60D513643 /* atom_neutral.png */,
-				3F4A6CA941F5D7AD26FE0E53 /* atom_smirk.png */,
-				884BFC8F9943FD0AA564E20C /* atom_thinking.png */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -524,32 +537,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-
-		0CD955E86ABF4B4891172FBF /* Linux */ = {
-			isa = PBXGroup;
-			children = (
-					BAC6CD788A2E423AB295421C /* LinuxModels.swift */,
-					46EAF975D2B04B7A9F5CDB26 /* LinuxMachinesView.swift */,
-					55D6E17B965E4D6AA1B15775 /* LinuxAddMachineView.swift */,
-					60BC5A3F579F41DDA71A6039 /* LinuxTerminalView.swift */,
-					F2C5F98954724451ADB4071A /* LinuxSystemMonitorView.swift */,
-					13E1D52360EE49A8ADCA96F3 /* LinuxFileManagerView.swift */,
-			);
-			path = Linux;
-			sourceTree = "<group>";
-		};
-		
-		10B821F72B6F446CA14691A1 /* LTE */ = {
-			isa = PBXGroup;
-			children = (
-					EC2637919C6F406B87849F89 /* LTEModels.swift */,
-					E840010DE9AA48EE81A6E161 /* LTENetworkView.swift */,
-					6E27ED52665849BD856D30A0 /* LTEVoIPDialerView.swift */,
-			);
-			path = LTE;
-			sourceTree = "<group>";
-		};
-		/* End PBXGroup section */
+/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		BFDAEFA1D1940F635D37F0CE /* LilithSwiftUI */ = {
@@ -617,9 +605,6 @@
 				3B4E555B3516AEEB42ACB245 /* Assets.xcassets in Resources */,
 				FC79BC7E4CA570484B8035AD /* README.md in Resources */,
 				814D9DAFDE6B15B9F664DEA8 /* app.html in Resources */,
-				50BC45F2EC428E2B98D96204 /* atom_neutral.png in Resources */,
-				DC16710C15073097C43AA731 /* atom_smirk.png in Resources */,
-				C90E63E4ACA3E1E31D8DB5B2 /* atom_thinking.png in Resources */,
 				E938F5402D041E4CA38F197A /* index.html in Resources */,
 				CD7957BE442540EB4DAE51BE /* main.cpython-311.pyc in Resources */,
 				A8298E77E9D885BFC0F11F4E /* main.py in Resources */,
@@ -666,8 +651,8 @@
 				X5Y6Z7A8B9C0D1E2F3G4H5I6 /* LilithPersonalityEngine.swift in Sources */,
 				Z7A8B9C0D1E2F3G4H5I6J7K8 /* LilithRelationshipEngine.swift in Sources */,
 				B9C0D1E2F3G4H5I6J7K8L9M0 /* LilithWorkflowEngine.swift in Sources */,
-					D4E5F6A7B8C9D0E1F2A3B4C5 /* LilithRootSystem.swift in Sources */,
-					ADF35A72502D1B08934D0FDA /* ContentView.swift in Sources */,
+				D4E5F6A7B8C9D0E1F2A3B4C5 /* LilithRootSystem.swift in Sources */,
+				ADF35A72502D1B08934D0FDA /* ContentView.swift in Sources */,
 				48AC92783BEBDA30D900394A /* GlassCard.swift in Sources */,
 				FB46C2E461296B12936EFC05 /* HistoryView.swift in Sources */,
 				8438D20BF3A4609A9F064D96 /* HistoryViewModel.swift in Sources */,
@@ -874,10 +859,10 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Lilith;
 				INFOPLIST_KEY_NSAppTransportSecurity = "[\"NSAllowsArbitraryLoads\": true]";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Lilith needs camera for video calls";
-					INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Lilith uses your location to detect nearby places and travel time.";
-					INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Lilith uses your location to detect nearby places and travel time.";
-					INFOPLIST_KEY_NSMicrophoneUsageDescription = "Lilith needs microphone for calls";
-					INFOPLIST_KEY_NSMotionUsageDescription = "Lilith uses motion data to understand your activity and adapt suggestions.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Lilith uses your location to detect nearby places and travel time.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Lilith uses your location to detect nearby places and travel time.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Lilith needs microphone for calls";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Lilith uses motion data to understand your activity and adapt suggestions.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Lilith uses speech recognition to convert your voice into commands.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

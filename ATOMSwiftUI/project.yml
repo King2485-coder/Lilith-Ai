@@ -11,6 +11,8 @@ settings:
     CODE_SIGN_IDENTITY: "Apple Development"
     GENERATE_INFOPLIST_FILE: YES
     INFOPLIST_KEY_CFBundleDisplayName: Lilith
+    INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription: Lilith uses Bluetooth to discover and connect to nearby devices.
+    INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription: Lilith uses Bluetooth to create a local mesh communication network.
     INFOPLIST_KEY_NSCameraUsageDescription: Lilith needs camera for video calls
     INFOPLIST_KEY_NSMicrophoneUsageDescription: Lilith needs microphone for calls
     INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Lilith uses speech recognition to convert your voice into commands.

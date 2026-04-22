@@ -9,6 +9,7 @@ struct WorkspaceShellView: View {
     @State private var selectedDestination: WorkspaceDestination = .assistant
     @State private var chatConversationId: String?
 
+    @StateObject private var mesh = LilithBluetoothMesh()
     @StateObject private var chatViewModel = ChatViewModel()
     @StateObject private var financeViewModel = FinanceDashboardViewModel()
     @StateObject private var legalViewModel = LegalDashboardViewModel()
@@ -80,6 +81,7 @@ struct WorkspaceShellView: View {
             )
         }
         .task {
+            mesh.startMesh()
             await loadChrome()
             await preloadVisibleData()
         }
@@ -505,6 +507,22 @@ struct WorkspaceShellView: View {
                     .background(LilithTheme.surface, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
                 }
                 .buttonStyle(.plain)
+
+                HStack(spacing: 8) {
+                    Circle()
+                        .fill(mesh.isScanning ? Color.green : Color.gray)
+                        .frame(width: 10, height: 10)
+
+                    Text(mesh.isScanning ? "Mesh scanning" : "Mesh idle")
+                        .font(.caption)
+                        .foregroundStyle(.white)
+
+                    if !mesh.discoveredDevices.isEmpty {
+                        Text("Devices: \(mesh.discoveredDevices.count)")
+                            .font(.caption)
+                            .foregroundStyle(.white.opacity(0.8))
+                    }
+                }
 
                 HStack(spacing: 10) {
                     Button {
