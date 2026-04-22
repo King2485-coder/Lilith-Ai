@@ -39,11 +39,8 @@ targets:
     type: application
     platform: iOS
     sources:
-      - path: .
-        name: Lilith
-        excludes:
-          - project.yml
-          - "*.xcodeproj"
+      - path: Lilith
+      - path: Assets.xcassets
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.omwllc2020.lilith.swiftui
