@@ -1,8 +1,11 @@
 import Foundation
+#if canImport(WebRTC)
 import WebRTC
+#endif
 import AVFoundation
 import SwiftUI
 
+#if canImport(WebRTC)
 final class WebRTCManager: NSObject, ObservableObject {
 
     static let shared = WebRTCManager()
@@ -185,3 +188,22 @@ extension WebRTCManager: RTCPeerConnectionDelegate {
     func peerConnection(_ peerConnection: RTCPeerConnection, didStartReceivingOn transceiver: RTCRtpTransceiver) {}
     func peerConnection(_ peerConnection: RTCPeerConnection, didAdd rtpReceiver: RTCRtpReceiver, streams: [RTCMediaStream]) {}
 }
+#else
+final class WebRTCManager: NSObject, ObservableObject {
+
+    static let shared = WebRTCManager()
+
+    @Published var localTrack: AnyObject?
+    @Published var remoteTrack: AnyObject?
+
+    func startConnection() {}
+    func endConnection() {}
+    func createPeerConnection() {}
+    func startLocalMedia() {}
+    func createOffer() {}
+    func receiveOffer(_ data: [String: Any]) {}
+    func createAnswer() {}
+    func receiveAnswer(_ data: [String: Any]) {}
+    func receiveICE(_ data: [String: Any]) {}
+}
+#endif
