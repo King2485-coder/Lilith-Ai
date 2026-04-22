@@ -9,7 +9,7 @@ final class CallManager: NSObject, CXProviderDelegate {
     private let callController = CXCallController()
 
     private override init() {
-        let config = CXProviderConfiguration(localizedName: "Lilith")
+        let config = CXProviderConfiguration()
         config.supportsVideo = true
 
         provider = CXProvider(configuration: config)

@@ -75,7 +75,7 @@ struct LinuxTerminalView: View {
                     }
                     .padding(16)
                 }
-                .onChange(of: viewModel.commandHistory.count) { _ in
+                .onChange(of: viewModel.commandHistory.count) { _, _ in
                     if let last = viewModel.commandHistory.last {
                         withAnimation { proxy.scrollTo(last.id, anchor: .bottom) }
                     }

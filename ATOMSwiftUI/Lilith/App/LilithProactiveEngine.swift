@@ -10,7 +10,7 @@ enum LilithEventType: String, Codable {
 }
 
 struct LilithEvent: Identifiable, Codable {
-    let id   = UUID()
+    var id   = UUID()
     let type : LilithEventType
     let text : String?
     let date : Date
