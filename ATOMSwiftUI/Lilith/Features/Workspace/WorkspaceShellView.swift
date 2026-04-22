@@ -508,21 +508,28 @@ struct WorkspaceShellView: View {
                 }
                 .buttonStyle(.plain)
 
-                HStack(spacing: 8) {
-                    Circle()
-                        .fill(mesh.isScanning ? Color.green : Color.gray)
-                        .frame(width: 10, height: 10)
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("Lilith Mesh")
+                        .font(.headline)
+                        .foregroundColor(.white)
 
-                    Text(mesh.isScanning ? "Mesh scanning" : "Mesh idle")
-                        .font(.caption)
-                        .foregroundStyle(.white)
+                    HStack {
+                        Circle()
+                            .fill(mesh.isScanning ? Color.green : Color.red)
+                            .frame(width: 10, height: 10)
 
-                    if !mesh.discoveredDevices.isEmpty {
-                        Text("Devices: \(mesh.discoveredDevices.count)")
+                        Text(mesh.isScanning ? "Scanning..." : "Idle")
+                            .foregroundColor(.white)
                             .font(.caption)
-                            .foregroundStyle(.white.opacity(0.8))
                     }
+
+                    Text("Devices: \(mesh.discoveredDevices.count)")
+                        .foregroundColor(.white.opacity(0.8))
+                        .font(.caption)
                 }
+                .padding(10)
+                .background(Color.black.opacity(0.3))
+                .cornerRadius(12)
 
                 HStack(spacing: 10) {
                     Button {

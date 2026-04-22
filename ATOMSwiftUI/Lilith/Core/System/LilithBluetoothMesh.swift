@@ -21,8 +21,35 @@ final class LilithBluetoothMesh: NSObject, ObservableObject {
 
     /// Starts Bluetooth scanning and advertising for the mesh network.
     func startMesh() {
-        centralManager = CBCentralManager(delegate: self, queue: .main)
-        peripheralManager = CBPeripheralManager(delegate: self, queue: .main)
+        if centralManager == nil {
+            centralManager = CBCentralManager(delegate: self, queue: .main)
+        }
+        if peripheralManager == nil {
+            peripheralManager = CBPeripheralManager(delegate: self, queue: .main)
+        }
+
+        if centralManager?.state == .poweredOn {
+            startScanning()
+        }
+
+        if peripheralManager?.state == .poweredOn {
+            startAdvertising()
+        }
+    }
+
+    private func startScanning() {
+        centralManager?.scanForPeripherals(
+            withServices: [LilithBluetoothMesh.meshServiceUUID],
+            options: [CBCentralManagerScanOptionAllowDuplicatesKey: false]
+        )
+        isScanning = true
+    }
+
+    private func startAdvertising() {
+        peripheralManager?.startAdvertising([
+            CBAdvertisementDataServiceUUIDsKey: [LilithBluetoothMesh.meshServiceUUID],
+            CBAdvertisementDataLocalNameKey: "LilithMesh"
+        ])
     }
 
     /// Stops all mesh activity and clears discovered devices.
@@ -39,15 +66,11 @@ final class LilithBluetoothMesh: NSObject, ObservableObject {
 extension LilithBluetoothMesh: CBCentralManagerDelegate {
 
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
-        guard central.state == .poweredOn else {
+        if central.state == .poweredOn {
+            startScanning()
+        } else {
             isScanning = false
-            return
         }
-        central.scanForPeripherals(
-            withServices: [LilithBluetoothMesh.meshServiceUUID],
-            options: [CBCentralManagerScanOptionAllowDuplicatesKey: false]
-        )
-        isScanning = true
     }
 
     func centralManager(
@@ -57,6 +80,7 @@ extension LilithBluetoothMesh: CBCentralManagerDelegate {
         rssi RSSI: NSNumber
     ) {
         guard !discoveredDevices.contains(where: { $0.identifier == peripheral.identifier }) else { return }
+        print("🔥 Found device: \(peripheral.name ?? "Unknown")")
         discoveredDevices.append(peripheral)
     }
 
@@ -70,10 +94,8 @@ extension LilithBluetoothMesh: CBCentralManagerDelegate {
 extension LilithBluetoothMesh: CBPeripheralManagerDelegate {
 
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
-        guard peripheral.state == .poweredOn else { return }
-        peripheral.startAdvertising([
-            CBAdvertisementDataServiceUUIDsKey: [LilithBluetoothMesh.meshServiceUUID],
-            CBAdvertisementDataLocalNameKey: "LilithMesh"
-        ])
+        if peripheral.state == .poweredOn {
+            startAdvertising()
+        }
     }
 }
