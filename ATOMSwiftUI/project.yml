@@ -1,0 +1,54 @@
+name: Lilith
+options:
+  minimumXcodeGenVersion: 2.38.0
+settings:
+  base:
+    PRODUCT_NAME: LilithSwiftUI
+    SWIFT_VERSION: 5.0
+    IPHONEOS_DEPLOYMENT_TARGET: 17.0
+    DEVELOPMENT_TEAM: 46PM2SB7NF
+    CODE_SIGN_STYLE: Automatic
+    CODE_SIGN_IDENTITY: "Apple Development"
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_CFBundleDisplayName: Lilith
+    INFOPLIST_KEY_NSCameraUsageDescription: Lilith needs camera for video calls
+    INFOPLIST_KEY_NSMicrophoneUsageDescription: Lilith needs microphone for calls
+    INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Lilith uses speech recognition to convert your voice into commands.
+    INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+    INFOPLIST_KEY_UILaunchScreen_Generation: YES
+    INFOPLIST_KEY_BACKEND_URL: "http://192.168.1.126:8000"
+    INFOPLIST_KEY_NSAppTransportSecurity:
+      NSAllowsArbitraryLoads: YES
+    INFOPLIST_KEY_UIStatusBarStyle: UIStatusBarStyleLightContent
+    INFOPLIST_KEY_UISupportedInterfaceOrientations:
+      - UIInterfaceOrientationPortrait
+      - UIInterfaceOrientationLandscapeLeft
+      - UIInterfaceOrientationLandscapeRight
+    INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad:
+      - UIInterfaceOrientationPortrait
+      - UIInterfaceOrientationPortraitUpsideDown
+      - UIInterfaceOrientationLandscapeLeft
+      - UIInterfaceOrientationLandscapeRight
+configs:
+  Debug: debug
+  Release: release
+targets:
+  LilithSwiftUI:
+    type: application
+    platform: iOS
+    sources:
+      - path: .
+        name: Lilith
+        excludes:
+          - project.yml
+          - "*.xcodeproj"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.omwllc2020.lilith.swiftui
+        TARGETED_DEVICE_FAMILY: 1,2
+        SUPPORTS_MACCATALYST: NO
+        INFOPLIST_KEY_MASTER_EMAIL: "antoniohoshaw6@gmail.com"
+    dependencies:
+      - sdk: AVKit.framework
+      - sdk: PhotosUI.framework
+      - sdk: WebKit.framework

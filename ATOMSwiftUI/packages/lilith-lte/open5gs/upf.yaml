@@ -1,0 +1,39 @@
+logger:
+  file: /var/log/open5gs/upf.log
+
+upf:
+  pfcp:
+    server:
+      - addr: 127.0.0.7
+    client:
+
+  gtpu:
+    server:
+      - addr: 127.0.0.7
+
+  session:
+    - subnet: 10.45.0.0/16
+      gateway: 10.45.0.1
+      dnn: lilith
+
+  # Lilith Network Monitoring
+  metrics:
+    - addr: 127.0.0.7
+      port: 9090
+
+  # PFCP forwarding rules
+  pfcp_rules:
+    forward:
+      - dst_interface: 0
+        network_instance: "lilith"
+
+# Virtual network interfaces for UE connectivity
+gtpu:
+  - addr: 127.0.0.7
+
+parameter:
+  no_ipv6: true
+
+max:
+  ue: 1024
+  peer: 64

@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lilith App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="app">
+  <div class="arena-bg"></div>
+  <div class="page narrow">
+    <header class="topbar">
+      <div class="top-left">
+        <span class="pill subtle">Battle Mode</span>
+        <button class="pill ghost small" id="toolbox-toggle">Toolbox</button>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Follow us for the latest in AI news and advancements" aria-label="search" />
+        <div class="search-icons">
+          <span>📺</span><span>📧</span><span>📲</span><span>🔔</span>
+        </div>
+      </div>
+      <a class="ghost logout-action" href="#">Log out</a>
+    </header>
+
+    <main class="arena-main">
+      <div class="arena-hero">
+        <div class="logo-row">
+          <div class="mark small"><span class="atom-icon">⚛︎</span></div>
+          <span class="logo">Lilith</span>
+        </div>
+        <h1 class="arena-title">Experience the <span class="accent-green">frontier</span>.</h1>
+        <p class="lede" id="app-lede">Your workspace is ready.</p>
+        <div class="hero-atom">
+          <img src="assets/lilith_smirk.png" alt="Lilith character" />
+        </div>
+      </div>
+
+      <div class="arena-chips" id="app-chips"></div>
+
+      <section class="chat-shell">
+        <div class="chat-input">
+          <form id="app-chat-form">
+            <input id="app-chat-input" type="text" placeholder="Ask anything…" autocomplete="off" />
+          </form>
+        </div>
+        <div class="chat-actions">
+          <button type="button">➕ Add files</button>
+          <div class="icon-row">
+            <span>📎</span><span>🗣</span><span>🎨</span><span>🎥</span><span>🔗</span><span>⚙️</span><span>↗️</span>
+          </div>
+        </div>
+        <div class="code-card translucent">
+          <div class="code-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="filename">chat.json</span>
+          </div>
+          <pre id="app-chat-response">Awaiting message…</pre>
+        </div>
+      </section>
+
+      <section id="toolbox" class="toolbox hidden">
+        <header class="section-head">
+          <p class="eyebrow">Toolbox</p>
+          <h2>All Lilith features (mocked).</h2>
+          <p class="lede">Backend at <code>https://api.lilithai.one</code>.</p>
+        </header>
+
+        <article class="card tall">
+          <div class="card-head">
+            <span class="pill">Agent & Mode</span>
+            <span class="label" id="agent-mode-label">core · chat</span>
+          </div>
+          <div class="stack two-col">
+            <label class="field">
+              <span>Agent</span>
+              <select id="agent-select"></select>
+            </label>
+            <label class="field">
+              <span>Mode</span>
+              <select id="mode-select"></select>
+            </label>
+          </div>
+        </article>
+
+        <div class="work-grid">
+          <article class="card tall">
+            <div class="card-head">
+              <span class="pill">Image</span>
+              <span class="label">/api/image/generate</span>
+            </div>
+            <form id="app-image-form" class="stack">
+              <label class="field">
+                <span>Prompt</span>
+                <textarea id="app-image-prompt" rows="2" placeholder="e.g., neon city skyline, cinematic, dusk"></textarea>
+              </label>
+              <button class="primary full" type="submit">Generate</button>
+            </form>
+            <div class="media-card">
+              <img id="app-image-preview" src="assets/lilith_processing.png" alt="Generated" />
+              <div>
+                <p class="label">Preview</p>
+                <p class="small" id="app-image-status">Awaiting prompt…</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card tall">
+            <div class="card-head">
+              <span class="pill">Code Assist</span>
+              <span class="label">/api/code/assist</span>
+            </div>
+            <form id="app-code-form" class="stack">
+              <label class="field">
+                <span>Prompt</span>
+                <textarea id="app-code-input" rows="3" placeholder="Write a Swift function to format currency"></textarea>
+              </label>
+              <button class="primary full" type="submit">Assist</button>
+            </form>
+            <div class="code-card">
+              <div class="code-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="filename">assist.swift</span>
+              </div>
+              <pre id="app-code-response">// Waiting for prompt…</pre>
+            </div>
+          </article>
+
+          <article class="card tall">
+            <div class="card-head">
+              <span class="pill">Video (text → video)</span>
+              <span class="label">/api/video/generate</span>
+            </div>
+            <form id="app-video-form" class="stack">
+              <label class="field">
+                <span>Prompt</span>
+                <textarea id="app-video-prompt" rows="2" placeholder="A 6s cinematic dolly shot of a neon alley"></textarea>
+              </label>
+              <button class="primary full" type="submit">Render preview</button>
+            </form>
+            <div class="media-card">
+              <img id="app-video-thumb" src="assets/lilith_neutral.png" alt="Video thumb" />
+              <div>
+                <p class="label">Status</p>
+                <p class="small" id="app-video-status">Awaiting prompt…</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card tall">
+            <div class="card-head">
+              <span class="pill">Video (upload remix)</span>
+              <span class="label">/api/video/from-upload</span>
+            </div>
+            <form id="app-video-upload-form" class="stack">
+              <label class="field">
+                <span>Upload file</span>
+                <input id="app-video-file" type="file" />
+              </label>
+              <button class="primary full" type="submit">Remix</button>
+            </form>
+            <div class="media-card">
+              <img src="assets/lilith_smirk.png" alt="Remix" />
+              <div>
+                <p class="label">Status</p>
+                <p class="small" id="app-video-upload-status">Awaiting upload…</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card tall">
+            <div class="card-head">
+              <span class="pill">Site Cloner</span>
+              <span class="label">/api/clone</span>
+            </div>
+            <form id="app-clone-form" class="stack">
+              <label class="field">
+                <span>URL</span>
+                <input id="app-clone-url" type="url" placeholder="https://example.com" />
+              </label>
+              <button class="primary full" type="submit">Clone</button>
+            </form>
+            <div class="code-card">
+              <div class="code-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="filename">clone.html</span>
+              </div>
+              <pre id="app-clone-response">No clone yet…</pre>
+            </div>
+          </article>
+
+          <article class="card tall">
+            <div class="card-head">
+              <span class="pill">History</span>
+              <span class="label">/api/history</span>
+            </div>
+            <button class="secondary full" id="app-history-load">Load history</button>
+            <ul class="log" id="app-history-list"></ul>
+          </article>
+
+          <article class="card tall">
+            <div class="card-head">
+              <span class="pill">Projects</span>
+              <span class="label">/api/projects</span>
+            </div>
+            <button class="secondary full" id="app-projects-load">Load files</button>
+            <ul class="log" id="app-projects-list"></ul>
+            <form id="app-projects-save" class="stack">
+              <label class="field">
+                <span>Path</span>
+                <input id="app-project-path" type="text" placeholder="notes.txt" />
+              </label>
+              <label class="field">
+                <span>Content</span>
+                <textarea id="app-project-content" rows="2" placeholder="Hello Lilith"></textarea>
+              </label>
+              <button class="primary full" type="submit">Save file</button>
+            </form>
+            <p class="small" id="app-projects-status">No save yet…</p>
+          </article>
+
+          <article class="card tall">
+            <div class="card-head">
+              <span class="pill">Billing</span>
+              <span class="label">Subscriptions & credits</span>
+            </div>
+            <div class="stack">
+              <button class="primary full" id="app-plan-btn">Start Pro checkout</button>
+              <div class="stack two-col">
+                <label class="field">
+                  <span>Credit package</span>
+                  <select id="app-credits-select">
+                    <option value="100">100 credits</option>
+                    <option value="500">500 credits</option>
+                    <option value="1000">1000 credits</option>
+                  </select>
+                </label>
+                <button class="secondary full" id="app-credits-btn">Buy credits</button>
+              </div>
+              <p class="small" id="app-billing-status">No billing calls yet…</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="library" id="library">
+        <header class="section-head">
+          <p class="eyebrow">Library</p>
+          <h2>Your generated items</h2>
+          <p class="lede">Anything Lilith produces lands here for quick recall.</p>
+        </header>
+        <p class="small library-empty" id="library-empty">No items yet. Generate code, images, or video to see them here.</p>
+        <div class="library-grid" id="library-grid"></div>
+      </section>
+
+      <section class="faq" id="activity">
+        <header class="section-head">
+          <p class="eyebrow">Activity</p>
+          <h2>Recent calls</h2>
+        </header>
+        <ul class="log" id="app-log"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

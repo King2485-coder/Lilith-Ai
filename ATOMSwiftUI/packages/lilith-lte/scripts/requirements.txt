@@ -1,0 +1,16 @@
+# Lilith MITM Service Dependencies
+requests>=2.31.0
+pycryptodome>=3.19.0
+pyasn1>=0.5.0
+lxml>=4.9.3
+
+# QR Code generation for eSIM profiles
+qrcode[pil]>=7.4.0
+pillow>=10.0.0
+
+# Web framework for API
+flask>=3.0.0
+
+# Additional utilities
+python-dateutil>=2.8.2
+colorama>=0.4.6

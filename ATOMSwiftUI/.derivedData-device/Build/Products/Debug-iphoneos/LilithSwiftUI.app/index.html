@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lilith — Everyday AI partner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-glow"></div>
+  <div class="page">
+    <header class="nav">
+      <div class="brand">
+        <div class="mark">
+          <span class="atom-icon">⚛︎</span>
+        </div>
+        <div class="brand-text">
+          <span class="logo">Lilith</span>
+          <span class="sub">SwiftUI → Web</span>
+        </div>
+      </div>
+      <nav class="links">
+        <a href="#features">Product</a>
+        <a href="#workflows">Workflows</a>
+        <a href="#plans">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="secondary login-trigger" href="#">Log in</a>
+        <a class="ghost" href="https://atom.example/docs" aria-label="Docs">Docs</a>
+        <a class="primary" href="#get-started">Launch app</a>
+        <a class="secondary logout-action" href="#" style="display:none;">Logout</a>
+        <a class="ghost account-link" href="app.html" style="display:none;">Account</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="hero" id="get-started">
+        <div class="hero-copy">
+          <p class="eyebrow">Everyday AI partner</p>
+          <h1>Start something brilliant.</h1>
+          <p class="lede">Lilith keeps code, creativity, and learning in one calm workspace. Built to feel natural for beginners and powerful for pros.</p>
+          <div class="cta-row">
+            <a class="primary get-started" href="#">Get started</a>
+            <a class="secondary" href="#workflows">See workspace</a>
+          </div>
+          <div class="chips">
+            <span class="chip">Safe · Privacy-first</span>
+            <span class="chip">Fast · Optimized GPUs</span>
+            <span class="chip">Ready · 24/7 uptime</span>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-header">
+            <span class="pill">Ultra Thinking</span>
+            <div class="toggle">
+              <span class="dot active" data-mode="chat"></span>
+              <span class="dot" data-mode="code"></span>
+              <span class="dot" data-mode="media"></span>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="pane pane-chat active" role="group" aria-label="Chat preview">
+              <div class="message user">
+                <img src="assets/lilith_neutral.png" alt="User" />
+                <p>“Draft a feature grid for our launch page.”</p>
+              </div>
+              <div class="message ai">
+                <img src="assets/lilith_smirk.png" alt="Lilith" />
+                <p>On it. Hero, value props, CTA, and pricing. I'll keep it calm and fast-loading.</p>
+              </div>
+            </div>
+            <div class="pane pane-code" role="group" aria-label="Code preview">
+              <div class="code-card">
+                <div class="code-header">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span class="filename">IDE.swift</span>
+                </div>
+                <pre><code>// async build and deploy
+func launchSite() {
+  let result = try await atom.deploy(
+    target: .staticWeb,
+    optimizeImages: true
+  )
+  print(result.status)
+}</code></pre>
+              </div>
+            </div>
+            <div class="pane pane-media" role="group" aria-label="Media preview">
+              <div class="media-card">
+                <img src="assets/lilith_processing.png" alt="Media" />
+                <div>
+                  <p class="label">Image + video</p>
+                  <p class="small">Describe the vibe; Lilith storyboards, renders, and hands you shareable links.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <span class="status">Live mock backend included · FastAPI</span>
+            <span class="status">Stripe-ready plans</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <header class="section-head">
+          <p class="eyebrow">Everything in one calm surface</p>
+          <h2>Five agents, four modes, zero friction.</h2>
+          <p class="lede">Chat, build, generate, and launch without tab-chaos. Lilith keeps history, files, and billing in sync.</p>
+        </header>
+        <div class="feature-grid">
+          <article class="card">
+            <div class="icon circle-a">✦</div>
+            <h3>Instant help</h3>
+            <p>Type or speak and Lilith answers in plain language with citations.</p>
+          </article>
+          <article class="card">
+            <div class="icon circle-b">∞</div>
+            <h3>Create anything</h3>
+            <p>Code, images, video, and web pages in one place—no plug-in roulette.</p>
+          </article>
+          <article class="card">
+            <div class="icon circle-c">▣</div>
+            <h3>Stay organized</h3>
+            <p>Projects, files, history, and billing stay in sync across devices.</p>
+          </article>
+          <article class="card">
+            <div class="icon circle-a">🛡</div>
+            <h3>Safe & private</h3>
+            <p>Encryption at rest, scoped tokens, and role-based admin controls.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="workflows" id="workflows">
+        <header class="section-head">
+          <p class="eyebrow">Workflows</p>
+          <h2>Built for shipping, not just chatting.</h2>
+        </header>
+        <div class="workflow-grid">
+          <article class="stack-card">
+            <div class="stack-top">
+              <span class="pill">Chat & History</span>
+              <p class="title">Reason, recall, repeat.</p>
+              <p class="small">Threaded memory with delete + export. Swap agents without losing context.</p>
+            </div>
+            <ul>
+              <li>5 agents · 4 modes · Ultra Thinking</li>
+              <li>Voice input + Markdown output</li>
+              <li>One-tap history cleanup</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <div class="stack-top">
+              <span class="pill">Code IDE</span>
+              <p class="title">Edit, run, auto-fix.</p>
+              <p class="small">Execute locally or remote, preview HTML, and let Lilith patch failing tests.</p>
+            </div>
+            <ul>
+              <li>Run code with streaming logs</li>
+              <li>Auto-fix with inline diffs</li>
+              <li>Project-aware refs + file CRUD</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <div class="stack-top">
+              <span class="pill">Media Studio</span>
+              <p class="title">Images & video, fast.</p>
+              <p class="small">Text-to-video, remix from uploads, and image gen with gallery saves.</p>
+            </div>
+            <ul>
+              <li>Storyboard → render pipeline</li>
+              <li>Safe-by-default filters</li>
+              <li>Shareable links + downloads</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="plans" id="plans">
+        <header class="section-head">
+          <p class="eyebrow">Pricing</p>
+          <h2>Start free, scale with usage.</h2>
+          <p class="lede">Stripe subscriptions and credit packs are ready. Super Admin badge unlocks unlimited internal use.</p>
+        </header>
+        <div class="plan-cards">
+          <article class="plan-card">
+            <p class="pill">Starter</p>
+            <h3>$0</h3>
+            <p class="small">Try chat, history, and media with generous daily limits.</p>
+            <ul>
+              <li>Workspace shell + chat</li>
+              <li>Image & video sandbox</li>
+              <li>Community support</li>
+            </ul>
+            <a class="primary ghost-btn" href="#get-started">Start free</a>
+          </article>
+          <article class="plan-card accent">
+            <p class="pill">Pro</p>
+            <h3>$24/mo</h3>
+            <p class="small">Ship faster with IDE execution, team projects, and priority GPUs.</p>
+            <ul>
+              <li>Run code + auto-fix</li>
+              <li>Stripe billing + receipts</li>
+              <li>Team roles & audit log</li>
+            </ul>
+            <a class="primary" href="#get-started">Upgrade</a>
+          </article>
+          <article class="plan-card">
+            <p class="pill">Enterprise</p>
+            <h3>Let’s talk</h3>
+            <p class="small">Custom models, on-prem gateways, and dedicated success.</p>
+            <ul>
+              <li>SAML/SCIM</li>
+              <li>VPC / data residency</li>
+              <li>Dedicated support</li>
+            </ul>
+            <a class="secondary" href="mailto:hey@atom.example">Talk to us</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <header class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>What does “SwiftUI → Web” mean?</h2>
+        </header>
+        <div class="faq-grid">
+          <article class="card">
+            <h3>Is this a full port?</h3>
+            <p>It’s a fast landing site that mirrors the SwiftUI experience. The mock FastAPI backend in <code>main.py</code> can power demos.</p>
+          </article>
+          <article class="card">
+            <h3>How do I run it locally?</h3>
+            <p>Serve <code>web/</code> with any static server: <code>python3 -m http.server 8000</code> from the web folder.</p>
+          </article>
+          <article class="card">
+            <h3>Can I plug in the real API?</h3>
+            <p>Yes. Point fetch calls to your Lilith backend; swap the mock text in <code>script.js</code> with live requests.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="brand">
+        <div class="mark small"><span class="atom-icon">⚛︎</span></div>
+        <div class="brand-text">
+          <span class="logo">Lilith</span>
+          <span class="sub">Everyday AI partner</span>
+        </div>
+      </div>
+      <p class="small">Made with SwiftUI roots, now on the web. Encrypted, fast, and calm.</p>
+    </footer>
+  </div>
+
+  <div class="modal-overlay" data-modal="login">
+    <div class="modal">
+      <div class="modal-head">
+        <div class="mark small"><span class="atom-icon">⚛︎</span></div>
+        <div>
+          <p class="eyebrow">Welcome back</p>
+          <h3 id="auth-modal-title">Log in to Lilith</h3>
+        </div>
+        <button class="close" aria-label="Close login">×</button>
+      </div>
+      <div class="auth-tabs">
+        <button class="ghost small auth-tab active" data-target="login-form">Log in</button>
+        <button class="ghost small auth-tab" data-target="register-form">Create account</button>
+      </div>
+      <form id="login-form" class="modal-body auth-panel active">
+        <label class="field">
+          <span>Email</span>
+          <input name="email" type="email" placeholder="you@example.com" required />
+        </label>
+        <label class="field">
+          <span>Password</span>
+          <input name="password" type="password" placeholder="••••••••" required />
+        </label>
+        <button type="submit" class="primary full">Continue</button>
+        <p class="small" id="login-status">Sign in securely to Lilith.</p>
+        <p class="small">Forgot password? Reset flow coming soon.</p>
+      </form>
+      <form id="register-form" class="modal-body auth-panel">
+        <label class="field">
+          <span>Email</span>
+          <input name="email" type="email" placeholder="you@example.com" required />
+        </label>
+        <label class="field">
+          <span>Password</span>
+          <input name="password" type="password" placeholder="Create a strong password" required />
+        </label>
+        <button type="submit" class="primary full">Create account</button>
+        <p class="small" id="register-status">Create your Lilith account.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

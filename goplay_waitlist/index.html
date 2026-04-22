@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoPlay Waitlist</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0VCHFL5JZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z0VCHFL5JZ');
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f9fc;
+      color: #111;
+      text-align: center;
+    }
+
+    .wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+
+    .hero {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      display: block;
+      margin: 0 auto 30px;
+      border-radius: 22px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    h1 {
+      margin: 10px 0 12px;
+      font-size: 48px;
+      line-height: 1.1;
+    }
+
+    p {
+      margin: 0 0 30px;
+      font-size: 20px;
+      color: #444;
+    }
+
+    .form-card {
+      max-width: 460px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 28px 22px 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    input {
+      width: 100%;
+      padding: 14px 16px;
+      margin: 0 0 14px;
+      font-size: 16px;
+      border: 1px solid #d0d0d0;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #1fc46b;
+      box-shadow: 0 0 0 3px rgba(31, 196, 107, 0.15);
+    }
+
+    button {
+      width: 100%;
+      padding: 15px 18px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background: #1fc46b;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #18ad5d;
+    }
+
+    button:disabled {
+      opacity: 0.75;
+      cursor: not-allowed;
+    }
+
+    .small-text {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .message {
+      margin-top: 14px;
+      min-height: 20px;
+      font-size: 14px;
+      color: #b42318;
+    }
+
+    @media (max-width: 640px) {
+      .wrapper {
+        padding: 20px 14px 40px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+
+      .form-card {
+        padding: 22px 16px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <img src="goplay-waitlist.jpg" alt="Join the GoPlay Waitlist" class="hero" />
+
+    <h1>Join the GoPlay Waitlist</h1>
+    <p>Discover parks, playdates and outdoor fun for kids.</p>
+
+    <div class="form-card">
+      <form id="waitlistForm">
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+        <input type="email" id="email" name="email" placeholder="Your email" required />
+        <button id="submitBtn" type="submit">Join Waitlist</button>
+      </form>
+
+      <div class="small-text" id="signup-count">Loading signup count...</div>
+      <div class="message" id="message"></div>
+    </div>
+  </div>
+
+  <script>
+    async function loadSignupCount() {
+      try {
+        const response = await fetch('/.netlify/functions/count');
+        const text = await response.text();
+
+        let data;
+        try {
+          data = JSON.parse(text);
+        } catch (error) {
+          document.getElementById('signup-count').innerText = 'Families are joining the GoPlay waitlist';
+          return;
+        }
+
+        document.getElementById('signup-count').innerText =
+          `${data.total} families already joined`;
+      } catch (error) {
+        document.getElementById('signup-count').innerText =
+          'Families are joining the GoPlay waitlist';
+      }
+    }
+
+    loadSignupCount();
+
+    const form = document.getElementById('waitlistForm');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const submitBtn = document.getElementById('submitBtn');
+      const message = document.getElementById('message');
+
+      message.textContent = '';
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Joining...';
+
+      const params = new URLSearchParams(window.location.search);
+      const referredBy = params.get('ref') || '';
+
+      try {
+        const response = await fetch('/.netlify/functions/signup', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: document.getElementById('name').value.trim(),
+            email: document.getElementById('email').value.trim(),
+            referredBy
+          })
+        });
+
+        const text = await response.text();
+
+        let data;
+        try {
+          data = JSON.parse(text);
+        } catch (error) {
+          throw new Error('Signup function did not return valid JSON.');
+        }
+
+        if (!response.ok) {
+          throw new Error(data.message || 'Signup failed.');
+        }
+
+        window.location.href =
+          `/thanks.html?code=${encodeURIComponent(data.referralCode)}&position=${encodeURIComponent(data.position)}&count=${encodeURIComponent(data.totalSignups)}`;
+      } catch (error) {
+        message.textContent = error.message || 'Signup failed.';
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Join Waitlist';
+      }
+    });
+  </script>
+</body>
+</html>

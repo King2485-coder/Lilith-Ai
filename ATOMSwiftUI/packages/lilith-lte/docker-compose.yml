@@ -1,0 +1,261 @@
+version: '3.8'
+
+services:
+  # MongoDB for subscriber storage
+  mongodb:
+    image: mongo:6.0
+    container_name: lilith-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+      - ./open5gs/init_subscribers.py:/opt/init_subscribers.py
+    networks:
+      - lilith-net
+
+  # Open5GS Core Network
+  nrf:
+    image: open5gs/nrf:latest
+    container_name: lilith-nrf
+    restart: unless-stopped
+    ports:
+      - "7777:7777"
+    networks:
+      - lilith-net
+    depends_on:
+      - mongodb
+
+  amf:
+    image: open5gs/amf:latest
+    container_name: lilith-amf
+    restart: unless-stopped
+    ports:
+      - "38412:38412/sctp"
+    volumes:
+      - ./open5gs/amf.yaml:/etc/open5gs/amf.yaml
+    networks:
+      - lilith-net
+    depends_on:
+      - nrf
+      - mongodb
+
+  smf:
+    image: open5gs/smf:latest
+    container_name: lilith-smf
+    restart: unless-stopped
+    volumes:
+      - ./open5gs/smf.yaml:/etc/open5gs/smf.yaml
+    networks:
+      - lilith-net
+    depends_on:
+      - nrf
+      - upf
+
+  upf:
+    image: open5gs/upf:latest
+    container_name: lilith-upf
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    volumes:
+      - ./open5gs/upf.yaml:/etc/open5gs/upf.yaml
+    networks:
+      - lilith-net
+    depends_on:
+      - nrf
+
+  udm:
+    image: open5gs/udm:latest
+    container_name: lilith-udm
+    restart: unless-stopped
+    networks:
+      - lilith-net
+    depends_on:
+      - nrf
+      - mongodb
+
+  udr:
+    image: open5gs/udr:latest
+    container_name: lilith-udr
+    restart: unless-stopped
+    networks:
+      - lilith-net
+    depends_on:
+      - nrf
+      - mongodb
+
+  ausf:
+    image: open5gs/ausf:latest
+    container_name: lilith-ausf
+    restart: unless-stopped
+    networks:
+      - lilith-net
+    depends_on:
+      - nrf
+
+  pcf:
+    image: open5gs/pcf:latest
+    container_name: lilith-pcf
+    restart: unless-stopped
+    networks:
+      - lilith-net
+    depends_on:
+      - nrf
+      - mongodb
+
+  nssf:
+    image: open5gs/nssf:latest
+    container_name: lilith-nssf
+    restart: unless-stopped
+    networks:
+      - lilith-net
+    depends_on:
+      - nrf
+
+  bsf:
+    image: open5gs/bsf:latest
+    container_name: lilith-bsf
+    restart: unless-stopped
+    networks:
+      - lilith-net
+    depends_on:
+      - nrf
+
+  # HSS for 4G fallback
+  hss:
+    image: open5gs/hss:latest
+    container_name: lilith-hss
+    restart: unless-stopped
+    volumes:
+      - ./open5gs/hss.yaml:/etc/open5gs/hss.yaml
+    networks:
+      - lilith-net
+    depends_on:
+      - mongodb
+
+  # srsRAN 4G eNodeB Node 1
+  enb-node1:
+    image: srsran/zmq:latest
+    container_name: lilith-enb-node1
+    restart: unless-stopped
+    cap_add:
+      - SYS_NICE
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    volumes:
+      - ./srsran/enb_node1.conf:/etc/srsran/enb.conf
+      - ./srsran/rr_node1.conf:/etc/srsran/rr.conf
+      - ./srsran/rb.conf:/etc/srsran/rb.conf
+      - ./srsran/sib.conf:/etc/srsran/sib.conf
+    ports:
+      - "2152:2152/udp"
+      - "36412:36412/sctp"
+    networks:
+      - lilith-net
+    depends_on:
+      - amf
+
+  # srsRAN 4G eNodeB Node 2
+  enb-node2:
+    image: srsran/zmq:latest
+    container_name: lilith-enb-node2
+    restart: unless-stopped
+    cap_add:
+      - SYS_NICE
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    volumes:
+      - ./srsran/enb_node2.conf:/etc/srsran/enb.conf
+      - ./srsran/rr_node2.conf:/etc/srsran/rr.conf
+      - ./srsran/rb.conf:/etc/srsran/rb.conf
+      - ./srsran/sib.conf:/etc/srsran/sib.conf
+    ports:
+      - "2153:2152/udp"
+      - "36413:36412/sctp"
+    networks:
+      - lilith-net
+    depends_on:
+      - amf
+
+  # UE Simulator - User A
+  ue-usera:
+    image: srsran/zmq:latest
+    container_name: lilith-ue-usera
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    volumes:
+      - ./srsran/ue_usera.conf:/etc/srsran/ue.conf
+    networks:
+      - lilith-net
+    depends_on:
+      - enb-node1
+
+  # UE Simulator - User B
+  ue-userb:
+    image: srsran/zmq:latest
+    container_name: lilith-ue-userb
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    volumes:
+      - ./srsran/ue_userb.conf:/etc/srsran/ue.conf
+    networks:
+      - lilith-net
+    depends_on:
+      - enb-node2
+
+  # Lilith SMS MITM Service
+  lilith-mitm:
+    build:
+      context: ./scripts
+      dockerfile: Dockerfile.mitm
+    container_name: lilith-mitm
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+      - "5001:5001/udp"
+    volumes:
+      - ./scripts:/app
+      - ./logs:/var/log/lilith
+    networks:
+      - lilith-net
+    environment:
+      - LILITH_MODE=active
+      - SMS_INSIGHT_ENABLED=true
+      - VOICE_REDIRECT_ENABLED=true
+
+  # Lilith SIP Server for Voice Redirect
+  lilith-sip:
+    build:
+      context: ./voip
+      dockerfile: Dockerfile.sip
+    container_name: lilith-sip
+    restart: unless-stopped
+    ports:
+      - "5060:5060/udp"
+      - "5060:5060/tcp"
+      - "10000-10100:10000-10100/udp"
+    volumes:
+      - ./voip:/app
+    networks:
+      - lilith-net
+
+networks:
+  lilith-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  mongodb_data:

@@ -1,0 +1,28 @@
+{
+  "voice_system": "Lilith TTS",
+  "generated_at": "2026-04-21 07:18:38.994054",
+  "audio_files": {
+    "greeting": "/mnt/agents/output/lilith-lte/voip/audio/lilith_greeting.wav",
+    "focus_prompt": "/mnt/agents/output/lilith-lte/voip/audio/lilith_focus_prompt.wav",
+    "thankyou": "/mnt/agents/output/lilith-lte/voip/audio/lilith_thankyou.wav",
+    "status": "/mnt/agents/output/lilith-lte/voip/audio/lilith_status.wav",
+    "focus_red": "/mnt/agents/output/lilith-lte/voip/audio/lilith_focus_red.wav",
+    "focus_blue": "/mnt/agents/output/lilith-lte/voip/audio/lilith_focus_blue.wav",
+    "focus_green": "/mnt/agents/output/lilith-lte/voip/audio/lilith_focus_green.wav",
+    "focus_amber": "/mnt/agents/output/lilith-lte/voip/audio/lilith_focus_amber.wav",
+    "focus_unknown": "/mnt/agents/output/lilith-lte/voip/audio/lilith_focus_unknown.wav"
+  },
+  "scripts": {
+    "greeting": "This is Operator Lilith. Which focus state should I initialize for your node? You may say: Red State for critical operations, Blue State for normal mode, Green State to initiate, or Amber State to hold and observe.",
+    "focus_prompt": "Please say your desired focus state after the tone.",
+    "thankyou": "Thank you for using Lilith Private LTE Network. Your session is logged and secured. Have a productive cycle.",
+    "network_status": "Lilith Private LTE Network status: All systems operational. Your connection is secure. Signal strength optimal on band 7.",
+    "focus_responses": {
+      "red": "Focus state Red initialized. Critical operations mode engaged. All priority channels are now active. Proceed with caution.",
+      "blue": "Focus state Blue confirmed. Normal operations mode active. All systems running within standard parameters.",
+      "green": "Focus state Green initiated. Ready mode engaged. Your node is prepared for activation. Awaiting your command.",
+      "amber": "Focus state Amber set. Observation mode active. Monitoring and analysis protocols engaged. Stand by for updates.",
+      "unknown": "I'm sorry, I didn't understand your selection. Please try again. Say Red, Blue, Green, or Amber."
+    }
+  }
+}

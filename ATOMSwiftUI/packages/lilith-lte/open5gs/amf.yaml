@@ -1,0 +1,75 @@
+logger:
+  file: /var/log/open5gs/amf.log
+
+amf:
+  ngap:
+    - addr: 127.0.0.5
+      port: 38412
+  guami:
+    - plmn_id:
+        mcc: 001
+        mnc: 01
+      amf_id:
+        region: 2
+        set: 1
+  tai:
+    - plmn_id:
+        mcc: 001
+        mnc: 01
+      tac: 1
+  plmn_support:
+    - plmn_id:
+        mcc: 001
+        mnc: 01
+      s_nssai:
+        - sst: 1
+          sd: 000001
+  network_name:
+    full: Lilith Private LTE
+    short: LILITH
+  amf_name: open5gs-amf-0
+
+  # SMS over NAS support for MITM
+  sms_over_nas: true
+
+# N11 interface to SMF
+smf:
+  - sbi:
+      - addr: 127.0.0.4
+        port: 7777
+      - addr: ::1
+        port: 7777
+    pfcp:
+      - addr: 127.0.0.4
+
+# N26 interface to MME (4G interworking)
+mme:
+  - sbi:
+      - addr: 127.0.0.2
+        port: 7777
+
+nrf:
+  sbi:
+    - addr:
+        - 127.0.0.10
+        - ::1
+      port: 7777
+
+# Network Slicing Configuration
+sbi:
+  server:
+    - addr: 127.0.0.5
+      port: 7777
+    - addr: ::1
+      port: 7777
+  client:
+    nrf:
+      - uri: http://127.0.0.10:7777
+    scp:
+      - uri: http://127.0.0.200:7777
+
+parameter: {}
+max: {}
+time:
+  t3512:
+    value: 3600

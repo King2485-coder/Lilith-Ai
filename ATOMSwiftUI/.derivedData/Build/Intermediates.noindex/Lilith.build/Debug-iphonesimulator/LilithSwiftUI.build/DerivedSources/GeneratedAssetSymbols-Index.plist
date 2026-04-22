@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array/>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/king/Downloads/ATOMSwiftUI/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAtomNeutral</string>
+			<key>relativePath</key>
+			<string>./atom_neutral.imageset</string>
+			<key>swiftSymbol</key>
+			<string>atomNeutral</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/king/Downloads/ATOMSwiftUI/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAtomSmirk</string>
+			<key>relativePath</key>
+			<string>./atom_smirk.imageset</string>
+			<key>swiftSymbol</key>
+			<string>atomSmirk</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/king/Downloads/ATOMSwiftUI/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAtomThinking</string>
+			<key>relativePath</key>
+			<string>./atom_thinking.imageset</string>
+			<key>swiftSymbol</key>
+			<string>atomThinking</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

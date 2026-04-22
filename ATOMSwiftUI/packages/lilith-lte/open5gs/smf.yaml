@@ -1,0 +1,64 @@
+logger:
+  file: /var/log/open5gs/smf.log
+
+smf:
+  sbi:
+    server:
+      - addr: 127.0.0.4
+        port: 7777
+      - addr: ::1
+        port: 7777
+    client:
+      nrf:
+        - uri: http://127.0.0.10:7777
+      scp:
+        - uri: http://127.0.0.200:7777
+
+  pfcp:
+    server:
+      - addr: 127.0.0.4
+    client:
+      upf:
+        - address: 127.0.0.7
+
+  gtpc:
+    server:
+      - addr: 127.0.0.4
+
+  gtpu:
+    server:
+      - addr: 127.0.0.4
+
+  metrics:
+    addr: 127.0.0.4
+    port: 9090
+
+  session:
+    - subnet: 10.45.0.0/16
+      gateway: 10.45.0.1
+      dnn: lilith
+
+  dns:
+    - 8.8.8.8
+    - 8.8.4.4
+
+  mtu: 1400
+
+  # PFCP Rule for Lilith Intercept
+  pfcp_rules:
+    - description: "Lilith SMS Intercept"
+      precedence: 100
+      pdr_id: 1
+      far_id: 1
+      urr_id: 1
+
+# N4 interface to UPF
+upf:
+  pfcp:
+    - addr: 127.0.0.7
+
+parameter: {}
+max: {}
+time:
+  t3512:
+    value: 3600

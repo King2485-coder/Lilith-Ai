@@ -1,0 +1,37 @@
+{
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/App/RootView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/RootView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/RootView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/RootView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/RootView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/RootView.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Core/Storage/SessionStorage.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/SessionStorage.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/SessionStorage.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/SessionStorage.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/SessionStorage.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/SessionStorage.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Auth/RegisterView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/RegisterView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/RegisterView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/RegisterView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/RegisterView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/RegisterView.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/Projects/ProjectsViewModel.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ProjectsViewModel.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ProjectsViewModel.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ProjectsViewModel.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ProjectsViewModel.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ProjectsViewModel.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/SubscriptionSheet.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/SubscriptionSheet.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/SubscriptionSheet.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/SubscriptionSheet.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/SubscriptionSheet.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/SubscriptionSheet.swiftdeps"
+  }
+}

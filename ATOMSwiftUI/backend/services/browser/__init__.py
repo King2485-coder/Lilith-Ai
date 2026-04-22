@@ -1,0 +1,2 @@
+"""Browser service package."""
+

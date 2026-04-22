@@ -1,0 +1,34 @@
+{
+  "profile_metadata": {
+    "carrier_name": "LILITH",
+    "network_name": "Lilith Private LTE",
+    "profile_name": "LILITH-User B",
+    "iccid": "8900101000000002026",
+    "imsi": "001010000000002",
+    "msisdn": "222",
+    "mcc": "001",
+    "mnc": "01",
+    "plmn": "00101"
+  },
+  "activation": {
+    "lpa_string": "LPA:1$smdp.lilith-pvt-lte.local:443$7yjXKWwwxA-L1cjKcrVK",
+    "smdp_address": "smdp.lilith-pvt-lte.local",
+    "smdp_port": 443,
+    "matching_id": "7yjXKWwwxA-L1cjKcrVK",
+    "confirmation_code": "2WM05dof8vRh"
+  },
+  "security": {
+    "authentication_key": "11223344556677889900AABBCCDDEEFF",
+    "opc": "101112131415161718191A1B1C1D1E1F",
+    "amf": "0x9001"
+  },
+  "device": {
+    "imei": "3544900000002"
+  },
+  "branding": {
+    "carrier_name_display": "LILITH",
+    "spn": "LILITH",
+    "pnn": "Lilith Private LTE",
+    "opl": "00101;LILITH"
+  }
+}

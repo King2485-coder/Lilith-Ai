@@ -1,0 +1,44 @@
+{
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Core/Networking/APIClient.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/APIClient.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/APIClient.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/APIClient.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/APIClient.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/APIClient.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Auth/AuthModels.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AuthModels.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AuthModels.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AuthModels.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AuthModels.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AuthModels.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Auth/AuthStore.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AuthStore.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AuthStore.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AuthStore.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AuthStore.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AuthStore.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/Account/AccountView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AccountView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AccountView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AccountView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AccountView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AccountView.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/Account/AccountViewModel.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AccountViewModel.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AccountViewModel.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AccountViewModel.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AccountViewModel.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AccountViewModel.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/AgentSelectorSheet.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AgentSelectorSheet.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AgentSelectorSheet.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AgentSelectorSheet.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AgentSelectorSheet.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/AgentSelectorSheet.swiftdeps"
+  }
+}

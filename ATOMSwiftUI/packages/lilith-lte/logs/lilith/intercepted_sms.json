@@ -1,0 +1,106 @@
+[
+  {
+    "message_id": "97F4AF7ECE4F9D54",
+    "timestamp": "2026-04-21T07:17:22.355449",
+    "source": {
+      "msisdn": "111",
+      "imsi": "001010000000001",
+      "identity": "User A"
+    },
+    "destination": {
+      "msisdn": "222",
+      "imsi": "001010000000002",
+      "identity": "User B"
+    },
+    "message": {
+      "original": "I need to focus on the Red State today. Critical operations require immediate attention.",
+      "modified": "I need to focus on the Red State today. Critical operations require immediate attention.\n---\nLilith Note: User A is showing signs of intense focus. The Red State pattern suggests decisive action is being considered.",
+      "ai_insight": "Lilith Note: User A is showing signs of intense focus. The Red State pattern suggests decisive action is being considered.",
+      "focus_state": "Red State",
+      "message_type": "SMS_DELIVER"
+    },
+    "metadata": {
+      "intercepted_by": "LILITH",
+      "delivery_status": "PENDING",
+      "timestamp": "2026-04-21T07:17:22.355449"
+    }
+  },
+  {
+    "message_id": "693AE94F5BE66FF2",
+    "timestamp": "2026-04-21T07:17:22.355888",
+    "source": {
+      "msisdn": "222",
+      "imsi": "001010000000002",
+      "identity": "User B"
+    },
+    "destination": {
+      "msisdn": "111",
+      "imsi": "001010000000001",
+      "identity": "User A"
+    },
+    "message": {
+      "original": "Everything looks calm and normal. We can proceed with Blue State operations.",
+      "modified": "Everything looks calm and normal. We can proceed with Blue State operations.\n---\nLilith Note: User B is maintaining Blue State equilibrium. Communications appear calm and controlled.",
+      "ai_insight": "Lilith Note: User B is maintaining Blue State equilibrium. Communications appear calm and controlled.",
+      "focus_state": "Blue State",
+      "message_type": "SMS_DELIVER"
+    },
+    "metadata": {
+      "intercepted_by": "LILITH",
+      "delivery_status": "PENDING",
+      "timestamp": "2026-04-21T07:17:22.355888"
+    }
+  },
+  {
+    "message_id": "E02C1BAF3AFB94F4",
+    "timestamp": "2026-04-21T07:17:22.356301",
+    "source": {
+      "msisdn": "111",
+      "imsi": "001010000000001",
+      "identity": "User A"
+    },
+    "destination": {
+      "msisdn": "222",
+      "imsi": "001010000000002",
+      "identity": "User B"
+    },
+    "message": {
+      "original": "Ready to start the new Green State initiative. Launch sequence ready.",
+      "modified": "Ready to start the new Green State initiative. Launch sequence ready.\n---\nLilith Note: Green State activity detected from User A. This suggests a readiness to begin or activate.",
+      "ai_insight": "Lilith Note: Green State activity detected from User A. This suggests a readiness to begin or activate.",
+      "focus_state": "Green State",
+      "message_type": "SMS_DELIVER"
+    },
+    "metadata": {
+      "intercepted_by": "LILITH",
+      "delivery_status": "PENDING",
+      "timestamp": "2026-04-21T07:17:22.356301"
+    }
+  },
+  {
+    "message_id": "7E583598A8E548D1",
+    "timestamp": "2026-04-21T07:17:22.356691",
+    "source": {
+      "msisdn": "222",
+      "imsi": "001010000000002",
+      "identity": "User B"
+    },
+    "destination": {
+      "msisdn": "111",
+      "imsi": "001010000000001",
+      "identity": "User A"
+    },
+    "message": {
+      "original": "Let us wait and observe for now. Amber State seems appropriate.",
+      "modified": "Let us wait and observe for now. Amber State seems appropriate.\n---\nLilith Note: User B is in a 'wait and see' posture. Amber State indicates careful consideration of options.",
+      "ai_insight": "Lilith Note: User B is in a 'wait and see' posture. Amber State indicates careful consideration of options.",
+      "focus_state": "Amber State",
+      "message_type": "SMS_DELIVER"
+    },
+    "metadata": {
+      "intercepted_by": "LILITH",
+      "delivery_status": "PENDING",
+      "timestamp": "2026-04-21T07:17:22.356691"
+    }
+  }
+]

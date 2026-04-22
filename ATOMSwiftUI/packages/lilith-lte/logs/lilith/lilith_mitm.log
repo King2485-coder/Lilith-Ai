@@ -1,0 +1,31 @@
+2026-04-21 15:09:47,554 | LILITH_MITM | INFO | ============================================================
+2026-04-21 15:09:47,555 | LILITH_MITM | INFO |   Lilith SMS MITM System Initialized
+2026-04-21 15:09:47,555 | LILITH_MITM | INFO |   Monitoring: 111 <-> 222
+2026-04-21 15:09:47,555 | LILITH_MITM | INFO |   Carrier: LILITH
+2026-04-21 15:09:47,555 | LILITH_MITM | INFO | ============================================================
+2026-04-21 15:09:58,657 | LILITH_MITM | INFO | ============================================================
+2026-04-21 15:09:58,667 | LILITH_MITM | INFO |   Lilith SMS MITM System Initialized
+2026-04-21 15:09:58,667 | LILITH_MITM | INFO |   Monitoring: 111 <-> 222
+2026-04-21 15:09:58,667 | LILITH_MITM | INFO |   Carrier: LILITH
+2026-04-21 15:09:58,667 | LILITH_MITM | INFO | ============================================================
+2026-04-21 15:16:59,742 | LILITH_MITM | INFO | ============================================================
+2026-04-21 15:16:59,755 | LILITH_MITM | INFO |   Lilith SMS MITM System Initialized
+2026-04-21 15:16:59,755 | LILITH_MITM | INFO |   Monitoring: 111 <-> 222
+2026-04-21 15:16:59,755 | LILITH_MITM | INFO |   Carrier: LILITH
+2026-04-21 15:16:59,755 | LILITH_MITM | INFO | ============================================================
+2026-04-21 15:16:59,756 | LILITH_MITM | ERROR | Error logging interception: [Errno 2] No such file or directory: '/var/log/lilith/intercepted_sms.json'
+2026-04-21 15:16:59,756 | LILITH_MITM | INFO | [INTERCEPTED] 111 -> 222: I need to focus on the Red State today. Critical o...
+2026-04-21 15:16:59,756 | LILITH_MITM | INFO | [AI INSIGHT] Lilith Note: User A is showing signs of intense focus. The Red State pattern suggests decisive action is being considered.
+2026-04-21 15:17:22,345 | LILITH_MITM | INFO | ============================================================
+2026-04-21 15:17:22,355 | LILITH_MITM | INFO |   Lilith SMS MITM System Initialized
+2026-04-21 15:17:22,355 | LILITH_MITM | INFO |   Monitoring: 111 <-> 222
+2026-04-21 15:17:22,355 | LILITH_MITM | INFO |   Carrier: LILITH
+2026-04-21 15:17:22,355 | LILITH_MITM | INFO | ============================================================
+2026-04-21 15:17:22,355 | LILITH_MITM | INFO | [INTERCEPTED] 111 -> 222: I need to focus on the Red State today. Critical o...
+2026-04-21 15:17:22,355 | LILITH_MITM | INFO | [AI INSIGHT] Lilith Note: User A is showing signs of intense focus. The Red State pattern suggests decisive action is being considered.
+2026-04-21 15:17:22,356 | LILITH_MITM | INFO | [INTERCEPTED] 222 -> 111: Everything looks calm and normal. We can proceed w...
+2026-04-21 15:17:22,356 | LILITH_MITM | INFO | [AI INSIGHT] Lilith Note: User B is maintaining Blue State equilibrium. Communications appear calm and controlled.
+2026-04-21 15:17:22,356 | LILITH_MITM | INFO | [INTERCEPTED] 111 -> 222: Ready to start the new Green State initiative. Lau...
+2026-04-21 15:17:22,356 | LILITH_MITM | INFO | [AI INSIGHT] Lilith Note: Green State activity detected from User A. This suggests a readiness to begin or activate.
+2026-04-21 15:17:22,357 | LILITH_MITM | INFO | [INTERCEPTED] 222 -> 111: Let us wait and observe for now. Amber State seems...
+2026-04-21 15:17:22,357 | LILITH_MITM | INFO | [AI INSIGHT] Lilith Note: User B is in a 'wait and see' posture. Amber State indicates careful consideration of options.

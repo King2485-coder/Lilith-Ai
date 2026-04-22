@@ -1,0 +1,36 @@
+logger:
+  file: /var/log/open5gs/hss.log
+
+hss:
+  freeDiameter:
+    identity: hss.localdomain
+    realm: localdomain
+    port: 3868
+    sec_port: 5868
+    listen_on: 127.0.0.8
+    load_extension:
+      - module: fd_ext_fgeller
+        conf: /etc/freeDiameter/ext_fgeller.conf
+      - module: fd_ext_db
+        conf: /etc/freeDiameter/db_conf.yml
+    connect:
+      - identity: mme.localdomain
+        addr: 127.0.0.2
+        port: 3868
+      - identity: smf.localdomain
+        addr: 127.0.0.4
+        port: 3868
+
+  # Default algorithm profile
+  default_algorithm_profile:
+    integrity: 1  # EIA1
+    ciphering: 1  # EEA1
+
+  # SMS over SGs support
+  sms_over_sgs: true
+
+  # Subscriber database
+  db_uri: mongodb://localhost/open5gs
+
+parameter: {}
+max: {}

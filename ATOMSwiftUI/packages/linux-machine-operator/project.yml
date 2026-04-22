@@ -1,0 +1,38 @@
+name: LinuxMachineOperator
+targets:
+  LinuxMachineOperator:
+    type: application
+    platform: iOS
+    deploymentTarget: '18.0'
+    sources:
+    - Sources
+    - Assets.xcassets
+    resources:
+    - Resources
+    - Assets.xcassets
+    dependencies: []
+    settings:
+      base:
+        INFOPLIST_FILE: Sources/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.king.linuxmachineoperator
+        PRODUCT_NAME: LinuxMachineOperator
+        CURRENT_PROJECT_VERSION: '1'
+        MARKETING_VERSION: 1.0.0
+        BUNDLE_DISPLAY_NAME: Linux Machine Operator
+        IPHONEOS_DEPLOYMENT_TARGET: '18.0'
+        EXECUTABLE_NAME: $(PRODUCT_NAME)
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS: 'YES'
+        INFOPLIST_KEY_PrivacyManifestPath: Resources/PrivacyInfo.xcprivacy
+fileGroups:
+- Sources
+- Resources
+- Assets.xcassets
+options:
+  bundleIdPrefix: com.king
+  xcodeVersion: '16.2'
+  deploymentTarget: '18.0'
+  usesTabs: false
+  indentWidth: 2
+  tabWidth: 2
+  createIntermediateGroups: true

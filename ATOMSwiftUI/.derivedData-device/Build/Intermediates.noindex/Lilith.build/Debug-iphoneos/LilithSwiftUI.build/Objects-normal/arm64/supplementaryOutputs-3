@@ -1,0 +1,44 @@
+{
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/App/ContentView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ContentView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ContentView.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Core/UI/GlassCard.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/GlassCard.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/GlassCard.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/GlassCard.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/GlassCard.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/GlassCard.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/History/HistoryView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/HistoryView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/HistoryView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/HistoryView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/HistoryView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/HistoryView.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/History/HistoryViewModel.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/HistoryViewModel.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/HistoryViewModel.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/HistoryViewModel.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/HistoryViewModel.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/HistoryViewModel.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/IDE/IDEView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/IDEView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/IDEView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/IDEView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/IDEView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/IDEView.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/IDE/IDEViewModel.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/IDEViewModel.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/IDEViewModel.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/IDEViewModel.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/IDEViewModel.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/IDEViewModel.swiftdeps"
+  }
+}

@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lilith App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="app">
+  <div class="arena-bg"></div>
+  <div class="page narrow">
+    <header class="topbar">
+      <div class="top-left">
+        <span class="pill subtle">Workspace</span>
+        <button class="pill ghost small" id="toolbox-toggle">Toolbox</button>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Follow us for the latest in AI news and advancements" aria-label="search" />
+        <div class="search-icons">
+          <span>📺</span><span>📧</span><span>📲</span><span>🔔</span>
+        </div>
+      </div>
+      <a class="ghost logout-action" href="#">Log out</a>
+    </header>
+
+    <nav class="premium-nav" id="primary-nav">
+      <button class="nav-pill active" data-view-target="home">Home</button>
+      <button class="nav-pill" data-view-target="chat">Chat</button>
+      <button class="nav-pill" data-view-target="social">Social</button>
+      <button class="nav-pill" data-view-target="messages">Messages</button>
+      <button class="nav-pill" data-view-target="tools">Tools</button>
+      <button class="nav-pill" data-view-target="activity">Activity</button>
+      <button class="nav-pill" data-view-target="profile">Profile</button>
+    </nav>
+
+    <main class="arena-main">
+      <div class="arena-hero app-view is-active" data-view="home">
+        <div class="logo-row">
+          <div class="mark small"><span class="atom-icon">⚛︎</span></div>
+          <span class="logo">Lilith</span>
+        </div>
+        <h1 class="arena-title">Experience the <span class="accent-green">frontier</span>.</h1>
+        <p class="lede" id="app-lede">Your workspace is ready.</p>
+        <div class="hero-atom">
+          <img src="assets/lilith_smirk.png" alt="Lilith character" />
+        </div>
+      </div>
+
+      <div class="arena-chips app-view is-active" id="app-chips" data-view="home"></div>
+
+      <section class="home-command-center app-view is-active" data-view="home">
+        <article class="card tall">
+          <div class="card-head">
+            <span class="pill">Quick Actions</span>
+            <span class="label">Immediate workflows</span>
+          </div>
+          <div class="quick-action-grid">
+            <button class="ghost quick-action" data-view-target="chat" type="button">Ask Lilith</button>
+            <button class="ghost quick-action" id="home-new-post" type="button">New Post</button>
+            <button class="ghost quick-action" data-view-target="messages" type="button">Message</button>
+            <button class="ghost quick-action" id="home-start-call" type="button">Start Call</button>
+            <button class="ghost quick-action" data-view-target="tools" type="button">Open Tool</button>
+            <button class="ghost quick-action" data-tool-id="pdf_editor" type="button">Edit PDF</button>
+            <button class="ghost quick-action" data-tool-id="prompt_from_screenshot" type="button">Analyze Screenshot</button>
+            <button class="ghost quick-action" data-tool-id="long_to_reels" type="button">Create Reel</button>
+          </div>
+        </article>
+        <article class="card tall">
+          <div class="card-head">
+            <span class="pill">Social Highlights</span>
+            <span class="label">Network momentum</span>
+          </div>
+          <div class="skeleton-list" id="home-social-skeleton">
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line short"></div>
+            <div class="skeleton-line"></div>
+          </div>
+          <ul class="log hidden" id="home-social-list"></ul>
+        </article>
+        <article class="card tall">
+          <div class="card-head">
+            <span class="pill">Comms Pulse</span>
+            <span class="label">Username-first communication</span>
+          </div>
+          <div class="metrics-grid">
+            <div class="metric"><p class="label">Unread</p><h3 id="metric-unread">0</h3></div>
+            <div class="metric"><p class="label">Calls</p><h3 id="metric-calls">0</h3></div>
+            <div class="metric"><p class="label">Follows</p><h3 id="metric-follows">0</h3></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="chat-shell app-view" data-view="chat">
+        <div class="chat-input">
+          <form id="app-chat-form">
+            <input id="app-chat-input" type="text" placeholder="Ask anything…" autocomplete="off" />
+          </form>
+        </div>
+        <div class="chat-actions">
+          <button type="button">➕ Add files</button>
+          <div class="icon-row">
+            <span>📎</span><span>🗣</span><span>🎨</span><span>🎥</span><span>🔗</span><span>⚙️</span><span>↗️</span>
+          </div>
+        </div>
+        <div class="code-card translucent">
+          <div class="code-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="filename">chat.json</span>
+          </div>
+          <pre id="app-chat-response">Awaiting message…</pre>
+        </div>
+      </section>
+
+      <section id="toolbox" class="toolbox app-view hidden" data-view="tools">
+        <header class="section-head">
+          <p class="eyebrow">Toolbox</p>
+          <h2>All Lilith features.</h2>
+          <p class="lede">Connected to your configured Lilith backend.</p>
+        </header>
+
+        <article class="card tall" id="app-tools-hub">
+          <div class="card-head">
+            <span class="pill">Tools Hub</span>
+            <span class="label">Full capability visibility</span>
+          </div>
+          <p class="small">Every major Lilith feature is listed below with a launch button and route check.</p>
+          <label class="field">
+            <span>Search tools</span>
+            <input id="app-tools-search" type="text" placeholder="Search by tool name or category" />
+          </label>
+          <div class="library-grid" id="app-tools-catalog"></div>
+        </article>
+
+        <article class="card tall" id="app-tools-debug" style="display:none;">
+          <div class="card-head">
+            <span class="pill">Developer</span>
+            <span class="label">Tool & route inventory</span>
+          </div>
+          <p class="small">This panel is visible when <code>?debug_tools=1</code> is set.</p>
+          <pre id="app-tools-debug-output">// awaiting inventory...</pre>
+        </article>
+
+        <article class="card tall" id="tool-agent-mode">
+          <div class="card-head">
+            <span class="pill">Agent & Mode</span>
+            <span class="label" id="agent-mode-label">core · chat</span>
+          </div>
+          <div class="stack two-col">
+            <label class="field">
+              <span>Agent</span>
+              <select id="agent-select"></select>
+            </label>
+            <label class="field">
+              <span>Mode</span>
+              <select id="mode-select"></select>
+            </label>
+          </div>
+        </article>
+
+        <div class="work-grid">
+          <article class="card tall" id="tool-pdf-editor">
+            <div class="card-head">
+              <span class="pill">PDF Editor</span>
+              <span class="label">Adobe-style document workspace</span>
+            </div>
+            <p class="small">Open the document editor workspace and run editing or extraction workflows.</p>
+            <div class="stack">
+              <button class="primary full" id="app-pdf-open" type="button">Open document workflow</button>
+              <p class="small" id="app-pdf-status">Ready.</p>
+            </div>
+          </article>
+
+          <article class="card tall" id="tool-prompt-link">
+            <div class="card-head">
+              <span class="pill">Prompt From Link</span>
+              <span class="label">Link intelligence</span>
+            </div>
+            <button class="secondary full" id="app-link-open" type="button">Open full workspace</button>
+            <form id="app-link-prompt-form" class="stack">
+              <label class="field">
+                <span>URL</span>
+                <input id="app-link-prompt-url" type="url" placeholder="https://example.com/article" />
+              </label>
+              <button class="primary full" type="submit">Generate prompt</button>
+            </form>
+            <pre id="app-link-prompt-output">No prompt generated yet…</pre>
+          </article>
+
+          <article class="card tall" id="tool-prompt-screenshot">
+            <div class="card-head">
+              <span class="pill">Prompt From Screenshot</span>
+              <span class="label">Image prompt extraction</span>
+            </div>
+            <button class="secondary full" id="app-screenshot-open" type="button">Open full workspace</button>
+            <form id="app-screenshot-prompt-form" class="stack">
+              <label class="field">
+                <span>Screenshot file</span>
+                <input id="app-screenshot-file" type="file" accept="image/*" />
+              </label>
+              <button class="primary full" type="submit">Generate prompt</button>
+            </form>
+            <p class="small" id="app-screenshot-status">Awaiting screenshot…</p>
+          </article>
+
+          <article class="card tall" id="tool-wealth-wizard">
+            <div class="card-head">
+              <span class="pill">Wealth Wizard</span>
+              <span class="label">/api/finance/*</span>
+            </div>
+            <div class="stack">
+              <div class="stack two-col">
+                <button class="secondary full" id="app-finance-balance" type="button">Load balance</button>
+                <button class="secondary full" id="app-finance-analyze" type="button">Analyze spending</button>
+              </div>
+              <pre id="app-finance-output">No finance data yet…</pre>
+            </div>
+          </article>
+
+          <article class="card tall" id="tool-legal-tools">
+            <div class="card-head">
+              <span class="pill">Legal Tools</span>
+              <span class="label">/api/legal/*</span>
+            </div>
+            <label class="field">
+              <span>Legal text</span>
+              <textarea id="app-legal-input" rows="3" placeholder="Paste text for summary, draft, or clause extraction"></textarea>
+            </label>
+            <div class="stack two-col">
+              <button class="secondary full" id="app-legal-summary" type="button">Summarize</button>
+              <button class="secondary full" id="app-legal-clauses" type="button">Extract clauses</button>
+            </div>
+            <pre id="app-legal-output">No legal output yet…</pre>
+          </article>
+
+          <article class="card tall" id="tool-image-generation">
+            <div class="card-head">
+              <span class="pill">Image</span>
+              <span class="label">/api/image/generate</span>
+            </div>
+            <form id="app-image-form" class="stack">
+              <label class="field">
+                <span>Prompt</span>
+                <textarea id="app-image-prompt" rows="2" placeholder="e.g., neon city skyline, cinematic, dusk"></textarea>
+              </label>
+              <button class="primary full" type="submit">Generate</button>
+            </form>
+            <div class="media-card">
+              <img id="app-image-preview" src="assets/lilith_processing.png" alt="Generated" />
+              <div>
+                <p class="label">Preview</p>
+                <p class="small" id="app-image-status">Awaiting prompt…</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card tall" id="tool-code-assist">
+            <div class="card-head">
+              <span class="pill">Code Assist</span>
+              <span class="label">/api/code/assist</span>
+            </div>
+            <form id="app-code-form" class="stack">
+              <label class="field">
+                <span>Prompt</span>
+                <textarea id="app-code-input" rows="3" placeholder="Write a Swift function to format currency"></textarea>
+              </label>
+              <button class="primary full" type="submit">Assist</button>
+            </form>
+            <div class="code-card">
+              <div class="code-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="filename">assist.swift</span>
+              </div>
+              <pre id="app-code-response">// Waiting for prompt…</pre>
+            </div>
+          </article>
+
+          <article class="card tall" id="tool-video-editor">
+            <div class="card-head">
+              <span class="pill">Video (text → video)</span>
+              <span class="label">/api/video/generate</span>
+            </div>
+            <button class="secondary full" id="app-video-editor-open" type="button">Open full workspace</button>
+            <form id="app-video-form" class="stack">
+              <label class="field">
+                <span>Prompt</span>
+                <textarea id="app-video-prompt" rows="2" placeholder="A 6s cinematic dolly shot of a neon alley"></textarea>
+              </label>
+              <button class="primary full" type="submit">Render preview</button>
+            </form>
+            <div class="media-card">
+              <img id="app-video-thumb" src="assets/lilith_neutral.png" alt="Video thumb" />
+              <div>
+                <p class="label">Status</p>
+                <p class="small" id="app-video-status">Awaiting prompt…</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card tall" id="tool-video-reels">
+            <div class="card-head">
+              <span class="pill">Video (upload remix)</span>
+              <span class="label">/api/video/from-upload</span>
+            </div>
+            <button class="secondary full" id="app-reels-open" type="button">Open full workspace</button>
+            <form id="app-video-upload-form" class="stack">
+              <label class="field">
+                <span>Upload file</span>
+                <input id="app-video-file" type="file" />
+              </label>
+              <button class="primary full" type="submit">Remix</button>
+            </form>
+            <div class="media-card">
+              <img src="assets/lilith_smirk.png" alt="Remix" />
+              <div>
+                <p class="label">Status</p>
+                <p class="small" id="app-video-upload-status">Awaiting upload…</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card tall" id="tool-website-clone">
+            <div class="card-head">
+              <span class="pill">Site Cloner</span>
+              <span class="label">/api/clone</span>
+            </div>
+            <button class="secondary full" id="app-clone-open" type="button">Open full workspace</button>
+            <form id="app-clone-form" class="stack">
+              <label class="field">
+                <span>URL</span>
+                <input id="app-clone-url" type="url" placeholder="https://example.com" />
+              </label>
+              <button class="primary full" type="submit">Clone</button>
+            </form>
+            <div class="code-card">
+              <div class="code-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="filename">clone.html</span>
+              </div>
+              <pre id="app-clone-response">No clone yet…</pre>
+            </div>
+          </article>
+
+          <article class="card tall" id="tool-history">
+            <div class="card-head">
+              <span class="pill">History</span>
+              <span class="label">/api/history</span>
+            </div>
+            <button class="secondary full" id="app-history-load">Load history</button>
+            <ul class="log" id="app-history-list"></ul>
+          </article>
+
+          <article class="card tall" id="tool-projects">
+            <div class="card-head">
+              <span class="pill">Projects</span>
+              <span class="label">/api/projects</span>
+            </div>
+            <button class="secondary full" id="app-projects-load">Load files</button>
+            <ul class="log" id="app-projects-list"></ul>
+            <form id="app-projects-save" class="stack">
+              <label class="field">
+                <span>Path</span>
+                <input id="app-project-path" type="text" placeholder="notes.txt" />
+              </label>
+              <label class="field">
+                <span>Content</span>
+                <textarea id="app-project-content" rows="2" placeholder="Hello Lilith"></textarea>
+              </label>
+              <button class="primary full" type="submit">Save file</button>
+            </form>
+            <p class="small" id="app-projects-status">No save yet…</p>
+          </article>
+
+          <article class="card tall" id="tool-billing">
+            <div class="card-head">
+              <span class="pill">Billing</span>
+              <span class="label">Subscriptions & credits</span>
+            </div>
+            <div class="stack">
+              <button class="primary full" id="app-plan-btn">Start Pro checkout</button>
+              <div class="stack two-col">
+                <label class="field">
+                  <span>Credit package</span>
+                  <select id="app-credits-select">
+                    <option value="100">100 credits</option>
+                    <option value="500">500 credits</option>
+                    <option value="1000">1000 credits</option>
+                  </select>
+                </label>
+                <button class="secondary full" id="app-credits-btn">Buy credits</button>
+              </div>
+              <p class="small" id="app-billing-status">No billing calls yet…</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-view" data-view="social">
+        <header class="section-head">
+          <p class="eyebrow">Social</p>
+          <h2>Feed</h2>
+          <p class="lede">Discover updates, react, and jump directly into messages or calls.</p>
+        </header>
+        <article class="card tall">
+          <div class="card-head">
+            <span class="pill">Create</span>
+            <span class="label">Share text, image, video, and tool outputs</span>
+          </div>
+          <button class="primary full" id="open-post-composer" type="button">Create Post</button>
+        </article>
+        <div class="skeleton-list" id="social-feed-skeleton">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+        <div id="social-feed-list" class="social-feed hidden"></div>
+        <div id="social-feed-sentinel" class="feed-sentinel hidden">
+          <span class="small">Loading more posts...</span>
+        </div>
+      </section>
+
+      <section class="app-view" data-view="messages">
+        <header class="section-head">
+          <p class="eyebrow">Messages</p>
+          <h2>Username-first communication</h2>
+          <p class="lede">Start conversations and calls directly from Lilith identities.</p>
+        </header>
+        <div class="messages-grid">
+          <article class="card tall">
+            <div class="card-head">
+              <span class="pill">Threads</span>
+              <span class="label">Encrypted conversations</span>
+            </div>
+            <input id="messages-search" type="text" placeholder="Search @username" />
+            <ul class="log" id="messages-thread-list"></ul>
+          </article>
+          <article class="card tall">
+            <div class="card-head">
+              <span class="pill">Conversation</span>
+              <span class="label" id="active-thread-title">@lilith.team</span>
+            </div>
+            <div id="thread-preview" class="thread-preview"></div>
+            <p class="small typing-indicator hidden" id="thread-typing">Typing…</p>
+            <form id="thread-message-form" class="stack">
+              <input id="thread-message-input" type="text" placeholder="Send a message..." />
+              <div class="stack two-col">
+                <button class="secondary full" id="thread-attach-btn" type="button">Attach</button>
+                <button class="primary full" type="submit">Send</button>
+                <button class="secondary full" id="thread-call-btn" type="button">Call</button>
+              </div>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-view" data-view="profile">
+        <header class="section-head">
+          <p class="eyebrow">Profile</p>
+          <h2>@lilith.user</h2>
+          <p class="lede">Identity, social graph, and communication shortcuts.</p>
+        </header>
+        <div class="profile-grid">
+          <article class="card tall">
+            <div class="profile-head">
+              <img src="assets/lilith_neutral.png" alt="Profile image" class="avatar-xl" />
+              <div>
+                <h3>Lilith User</h3>
+                <p class="small">@lilith.user · Lilith ID 7A92 <span class="presence-dot online"></span> active now</p>
+                <p class="small">Building, sharing, and communicating through Lilith.</p>
+              </div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric"><p class="label">Posts</p><h3 id="profile-post-count">0</h3></div>
+              <div class="metric"><p class="label">Followers</p><h3 id="profile-follower-count">0</h3></div>
+              <div class="metric"><p class="label">Following</p><h3 id="profile-following-count">0</h3></div>
+            </div>
+            <div class="stack profile-actions-row">
+              <button class="primary full" id="profile-message-btn" type="button">Message</button>
+              <button class="secondary full" id="profile-call-btn" type="button">Call</button>
+              <button class="secondary full" id="profile-follow-btn" type="button">Follow</button>
+            </div>
+            <div class="profile-tabs" id="profile-tabs">
+              <button class="profile-tab active" data-profile-tab="posts" type="button">Posts</button>
+              <button class="profile-tab" data-profile-tab="media" type="button">Media</button>
+              <button class="profile-tab" data-profile-tab="activity" type="button">Activity</button>
+              <button class="profile-tab" data-profile-tab="tools" type="button">Tools</button>
+            </div>
+            <div id="profile-tab-content" class="profile-tab-content"></div>
+          </article>
+          <article class="card tall">
+            <div class="card-head">
+              <span class="pill">Discover</span>
+              <span class="label">Find people</span>
+            </div>
+            <input id="discover-search" type="text" placeholder="Search @username or name" />
+            <ul class="log" id="discover-results"></ul>
+          </article>
+          <article class="card tall">
+            <div class="card-head">
+              <span class="pill">Notifications</span>
+              <span class="label">Likes, comments, follows, messages</span>
+            </div>
+            <p class="small empty-state" id="notifications-empty">No notifications yet.</p>
+            <ul class="log hidden" id="notifications-list"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="library app-view" id="library" data-view="activity">
+        <header class="section-head">
+          <p class="eyebrow">Library</p>
+          <h2>Your generated items</h2>
+          <p class="lede">Anything Lilith produces lands here for quick recall.</p>
+        </header>
+        <p class="small library-empty" id="library-empty">No items yet. Generate code, images, or video to see them here.</p>
+        <div class="library-grid" id="library-grid"></div>
+      </section>
+
+      <section class="faq app-view" id="activity" data-view="activity">
+        <header class="section-head">
+          <p class="eyebrow">Activity</p>
+          <h2>Recent calls</h2>
+        </header>
+        <ul class="log" id="app-log"></ul>
+      </section>
+    </main>
+  </div>
+
+  <section class="composer-modal hidden" id="post-composer-modal" aria-hidden="true">
+    <div class="composer-sheet">
+      <header class="composer-head">
+        <button class="secondary" id="close-post-composer" type="button">Close</button>
+        <h3>New Post</h3>
+        <button class="primary" id="submit-post" type="button">Post</button>
+      </header>
+      <label class="field">
+        <span>Caption</span>
+        <textarea id="post-caption" rows="4" placeholder="Share an update with your network..."></textarea>
+      </label>
+      <div class="stack two-col">
+        <label class="field">
+          <span>Attach media</span>
+          <input id="post-media-file" type="file" accept="image/*,video/*" />
+        </label>
+        <label class="field">
+          <span>Audience</span>
+          <select id="post-audience">
+            <option>Public</option>
+            <option>Followers</option>
+            <option>Connections</option>
+          </select>
+        </label>
+      </div>
+      <p class="small" id="post-status">Draft ready.</p>
+    </div>
+  </section>
+
+  <div id="app-toast" class="app-toast hidden" role="status" aria-live="polite"></div>
+
+  <section class="composer-modal hidden" id="comments-modal" aria-hidden="true">
+    <div class="composer-sheet">
+      <header class="composer-head">
+        <button class="secondary" id="close-comments-modal" type="button">Close</button>
+        <h3>Comments</h3>
+        <button class="primary" id="post-comment-btn" type="button">Comment</button>
+      </header>
+      <ul class="log" id="comments-list"></ul>
+      <label class="field">
+        <span>Add comment</span>
+        <input id="comment-input" type="text" placeholder="Write a comment..." />
+      </label>
+    </div>
+  </section>
+
+  <section id="tool-workspace-modal" class="tool-workspace-modal hidden" aria-hidden="true">
+    <div class="tool-workspace-shell">
+      <header class="tool-workspace-topbar">
+        <button id="workspace-back-btn" class="secondary">Back</button>
+        <h2 id="workspace-title">Tool Workspace</h2>
+        <button id="workspace-primary-btn" class="primary">Done</button>
+      </header>
+
+      <main class="tool-workspace-body">
+        <section id="workspace-pdf_editor" class="tool-workspace-view hidden">
+          <div class="pdf-workspace-grid">
+            <aside class="workspace-panel">
+              <h3>Pages</h3>
+              <button id="pdf-upload-btn" class="secondary full" type="button">Open / Upload PDF</button>
+              <ul id="pdf-page-list" class="log"></ul>
+            </aside>
+            <section class="workspace-canvas">
+              <div class="workspace-canvas-head">
+                <span class="pill">Viewer</span>
+                <span id="pdf-zoom-label" class="label">100%</span>
+              </div>
+              <div id="pdf-page-canvas" class="pdf-canvas-surface">Select a page to begin.</div>
+            </section>
+            <aside class="workspace-panel">
+              <h3>Tools</h3>
+              <div class="tool-button-grid">
+                <button class="secondary" data-pdf-tool="select" type="button">Select</button>
+                <button class="secondary" data-pdf-tool="highlight" type="button">Highlight</button>
+                <button class="secondary" data-pdf-tool="draw" type="button">Draw</button>
+                <button class="secondary" data-pdf-tool="text" type="button">Text</button>
+                <button class="secondary" data-pdf-tool="comment" type="button">Comment</button>
+                <button class="secondary" data-pdf-tool="signature" type="button">Signature</button>
+              </div>
+              <label class="field">
+                <span>Annotation</span>
+                <textarea id="pdf-annotation-input" rows="4" placeholder="Add annotation notes..."></textarea>
+              </label>
+            </aside>
+          </div>
+          <footer class="workspace-bottombar">
+            <button class="secondary" id="pdf-undo-btn" type="button">Undo</button>
+            <button class="secondary" id="pdf-redo-btn" type="button">Redo</button>
+            <button class="secondary" id="pdf-zoom-out-btn" type="button">Zoom -</button>
+            <button class="secondary" id="pdf-zoom-in-btn" type="button">Zoom +</button>
+            <button class="secondary" id="pdf-add-page-btn" type="button">Add Page</button>
+            <button class="secondary" id="pdf-remove-page-btn" type="button">Remove Page</button>
+          </footer>
+        </section>
+
+        <section id="workspace-video_editor" class="tool-workspace-view hidden">
+          <div class="video-workspace-grid">
+            <section class="workspace-canvas">
+              <div class="workspace-canvas-head">
+                <span class="pill">Preview</span>
+                <span id="video-playhead-label" class="label">Playhead 00:00</span>
+              </div>
+              <div class="video-preview-surface">
+                <img id="video-preview-image" src="assets/lilith_neutral.png" alt="Video preview" />
+                <p id="video-preview-caption" class="small">Preview ready.</p>
+              </div>
+            </section>
+            <section class="workspace-panel wide">
+              <h3>Timeline</h3>
+              <input id="video-playhead-range" type="range" min="0" max="100" value="0" />
+              <div id="video-timeline-track" class="timeline-track"></div>
+            </section>
+          </div>
+          <footer class="workspace-bottombar">
+            <button class="secondary" id="video-trim-btn" type="button">Trim</button>
+            <button class="secondary" id="video-split-btn" type="button">Split</button>
+            <button class="secondary" id="video-text-btn" type="button">Add Text</button>
+            <button class="secondary" id="video-audio-btn" type="button">Add Audio</button>
+            <button class="secondary" id="video-effects-btn" type="button">Effects</button>
+          </footer>
+        </section>
+
+        <section id="workspace-long_to_reels" class="tool-workspace-view hidden">
+          <div class="workspace-panel">
+            <h3>Input</h3>
+            <label class="field">
+              <span>Upload long-form video</span>
+              <input id="reels-video-input" type="file" accept="video/*" />
+            </label>
+            <label class="field">
+              <span>Or provide source URL</span>
+              <input id="reels-source-url" type="url" placeholder="https://example.com/video.mp4" />
+            </label>
+            <button class="primary full" id="reels-generate-btn" type="button">Auto-generate clips</button>
+          </div>
+          <div id="reels-clips-grid" class="workspace-card-grid"></div>
+          <footer class="workspace-bottombar">
+            <button class="secondary" id="reels-edit-btn" type="button">Edit in Video Editor</button>
+            <button class="primary" id="reels-export-btn" type="button">Export Selected</button>
+          </footer>
+        </section>
+
+        <section id="workspace-prompt_from_screenshot" class="tool-workspace-view hidden">
+          <div class="workspace-panel">
+            <label class="field">
+              <span>Upload screenshot</span>
+              <input id="screenshot-workspace-input" type="file" accept="image/*" />
+            </label>
+            <button class="primary full" id="screenshot-extract-btn" type="button">Extract & Generate Prompt</button>
+          </div>
+          <div class="workspace-canvas">
+            <div class="workspace-canvas-head">
+              <span class="pill">Image Preview</span>
+              <span id="screenshot-meta" class="label">No screenshot loaded</span>
+            </div>
+            <img id="screenshot-preview-image" class="workspace-image-preview" src="assets/lilith_processing.png" alt="Screenshot preview" />
+          </div>
+          <div class="workspace-panel">
+            <label class="field">
+              <span>Structured Prompt</span>
+              <textarea id="screenshot-output" rows="12" placeholder="Generated structured prompt will appear here."></textarea>
+            </label>
+            <button class="secondary full" id="screenshot-copy-btn" type="button">Copy prompt</button>
+          </div>
+        </section>
+
+        <section id="workspace-website_clone" class="tool-workspace-view hidden">
+          <div class="workspace-panel">
+            <label class="field">
+              <span>Website URL</span>
+              <input id="clone-workspace-url" type="url" placeholder="https://example.com" />
+            </label>
+            <button class="primary full" id="clone-workspace-fetch-btn" type="button">Fetch Clone Preview</button>
+          </div>
+          <div class="workspace-canvas">
+            <div class="workspace-canvas-head">
+              <span class="pill">Preview</span>
+              <span id="clone-status" class="label">Idle</span>
+            </div>
+            <iframe id="clone-preview-frame" title="Cloned site preview" class="workspace-iframe-preview"></iframe>
+          </div>
+          <aside class="workspace-panel">
+            <h3>Structure Breakdown</h3>
+            <ul id="clone-structure-list" class="log"></ul>
+            <button class="secondary full" id="clone-export-btn" type="button">Export Reconstructed HTML</button>
+          </aside>
+        </section>
+
+        <section id="workspace-prompt_from_link" class="tool-workspace-view hidden">
+          <div class="workspace-panel">
+            <label class="field">
+              <span>Link URL</span>
+              <input id="link-workspace-url" type="url" placeholder="https://example.com/article" />
+            </label>
+            <button class="primary full" id="link-generate-btn" type="button">Generate Structured Prompt</button>
+          </div>
+          <div class="workspace-panel">
+            <label class="field">
+              <span>Prompt Output</span>
+              <textarea id="link-output" rows="14" placeholder="Prompt output will appear here."></textarea>
+            </label>
+            <button class="secondary full" id="link-copy-btn" type="button">Copy prompt</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

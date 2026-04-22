@@ -1,0 +1,37 @@
+{
+  "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/Media/VideoView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/VideoView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/VideoView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/VideoView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/VideoView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/VideoView.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/Media/VideoViewModel.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/VideoViewModel.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/VideoViewModel.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/VideoViewModel.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/VideoViewModel.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/VideoViewModel.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/WorkspaceModels.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/WorkspaceModels.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/WorkspaceModels.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/WorkspaceModels.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/WorkspaceModels.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/WorkspaceModels.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/WorkspaceShellView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/WorkspaceShellView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/WorkspaceShellView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/WorkspaceShellView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/WorkspaceShellView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphonesimulator/LilithSwiftUI.build/Objects-normal/arm64/WorkspaceShellView.swiftdeps"
+  }
+}

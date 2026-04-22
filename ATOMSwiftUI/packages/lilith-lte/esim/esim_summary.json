@@ -1,0 +1,30 @@
+{
+  "network": {
+    "carrier_name": "LILITH",
+    "network_name": "Lilith Private LTE",
+    "mcc": "001",
+    "mnc": "01",
+    "plmn": "00101"
+  },
+  "generated_at": "2026-04-21T06:52:13.689027",
+  "profiles": [
+    {
+      "user": "User A",
+      "msisdn": "111",
+      "imsi": "001010000000001",
+      "iccid": "8900101000000001018",
+      "lpa_string": "LPA:1$smdp.lilith-pvt-lte.local:443$fCZUqmTFG77NzcOtcTc9",
+      "qr_code": "/mnt/agents/output/lilith-lte/esim/qr_codes/lilith_esim_user_a.png",
+      "profile_file": "/mnt/agents/output/lilith-lte/esim/profiles/lilith_profile_user_a.json"
+    },
+    {
+      "user": "User B",
+      "msisdn": "222",
+      "imsi": "001010000000002",
+      "iccid": "8900101000000002026",
+      "lpa_string": "LPA:1$smdp.lilith-pvt-lte.local:443$7yjXKWwwxA-L1cjKcrVK",
+      "qr_code": "/mnt/agents/output/lilith-lte/esim/qr_codes/lilith_esim_user_b.png",
+      "profile_file": "/mnt/agents/output/lilith-lte/esim/profiles/lilith_profile_user_b.json"
+    }
+  ]
+}

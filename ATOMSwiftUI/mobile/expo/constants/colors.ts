@@ -1,0 +1,17 @@
+export const browserTheme = {
+  background: "#050A13",
+  panelElevated: "#0F1A2D",
+  card: "#0C1727",
+  border: "rgba(124,164,214,0.24)",
+  text: "#F4F8FF",
+  textMuted: "#8EA4C1",
+  textSoft: "#C4D3E8",
+  action: "#78B6FF",
+  actionSecondary: "rgba(34,58,88,0.72)",
+  glow: "rgba(120,182,255,0.32)",
+  success: "#55C797",
+  warning: "#D9A25B",
+  critical: "#EE5A5A",
+  accentViolet: "#9C8DFF",
+  glass: "rgba(15,27,44,0.62)",
+};

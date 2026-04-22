@@ -1,0 +1,44 @@
+{
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/App/Lilith.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/Lilith.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/Lilith.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/Lilith.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/Lilith.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/Lilith.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Core/UI/KeyboardObserver.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/KeyboardObserver.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/KeyboardObserver.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/KeyboardObserver.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/KeyboardObserver.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/KeyboardObserver.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Core/UI/LilithAnimatedView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LilithAnimatedView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LilithAnimatedView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LilithAnimatedView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LilithAnimatedView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LilithAnimatedView.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Core/UI/LilithAudioManager.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LilithAudioManager.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LilithAudioManager.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LilithAudioManager.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LilithAudioManager.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LilithAudioManager.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Landing/LandingView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LandingView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LandingView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LandingView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LandingView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/LandingView.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/Media/ImageGenView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ImageGenView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ImageGenView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ImageGenView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ImageGenView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ImageGenView.swiftdeps"
+  }
+}

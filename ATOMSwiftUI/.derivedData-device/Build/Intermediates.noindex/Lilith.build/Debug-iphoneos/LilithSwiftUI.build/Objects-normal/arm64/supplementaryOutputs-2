@@ -1,0 +1,44 @@
+{
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/Chat/ChatModels.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatModels.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatModels.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatModels.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatModels.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatModels.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/Chat/ChatView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatView.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/Chat/ChatViewModel.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatViewModel.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatViewModel.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatViewModel.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatViewModel.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/ChatViewModel.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/Clone/CloneView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CloneView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CloneView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CloneView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CloneView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CloneView.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/Clone/CloneViewModel.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CloneViewModel.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CloneViewModel.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CloneViewModel.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CloneViewModel.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CloneViewModel.swiftdeps"
+  },
+  "/Users/king/Downloads/ATOMSwiftUI/Lilith/Features/Workspace/IDE/CombinedChatIDEView.swift" : {
+    "const-values" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CombinedChatIDEView.swiftconstvalues",
+    "dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CombinedChatIDEView.d",
+    "diagnostics" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CombinedChatIDEView.dia",
+    "object" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CombinedChatIDEView.o",
+    "swift-dependencies" : "/Users/king/Downloads/ATOMSwiftUI/.derivedData-device/Build/Intermediates.noindex/Lilith.build/Debug-iphoneos/LilithSwiftUI.build/Objects-normal/arm64/CombinedChatIDEView.swiftdeps"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Nexus Browser",
+    "slug": "nwocuwnhv8ftn32bdwpzs",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "rork-app",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.rork.nwocuwnhv8ftn32bdwpzs"
+    },
+    "android": {
+      "package": "app.rork.nwocuwnhv8ftn32bdwpzs"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://rork.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
+

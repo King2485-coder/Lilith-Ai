@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You’re on the GoPlay Waitlist!</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0VCHFL5JZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z0VCHFL5JZ');
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f9fc;
+      color: #111;
+      text-align: center;
+    }
+
+    .wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+
+    .hero {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      display: block;
+      margin: 0 auto 30px;
+      border-radius: 22px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    .card {
+      max-width: 520px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 28px 22px 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 40px;
+      line-height: 1.1;
+    }
+
+    p {
+      margin: 0 0 18px;
+      font-size: 18px;
+      color: #444;
+    }
+
+    .position {
+      margin: 0 0 18px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #1b8d4e;
+    }
+
+    .referral-box {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid #d0d0d0;
+      border-radius: 10px;
+      background: #fafafa;
+      font-size: 15px;
+      word-break: break-all;
+      margin: 0 0 14px;
+    }
+
+    button, .back-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 20px;
+      background: #22c55e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    button:hover, .back-link:hover {
+      background: #16a34a;
+    }
+
+    .rewards {
+      margin-top: 24px;
+      text-align: left;
+    }
+
+    .rewards h3 {
+      margin-bottom: 12px;
+    }
+
+    .rewards ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .rewards li {
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    .helper {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 640px) {
+      .wrapper {
+        padding: 20px 14px 40px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .card {
+        padding: 22px 16px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <img src="goplay-waitlist.jpg" alt="GoPlay Waitlist" class="hero" />
+
+    <div class="card">
+      <h1>You’re on the GoPlay Waitlist 🎉</h1>
+      <p>Invite friends to move up the list.</p>
+
+      <div class="position" id="position"></div>
+
+      <div class="referral-box" id="referral-link"></div>
+
+      <button type="button" onclick="copyLink()">Copy Referral Link</button>
+      <br />
+      <a href="/index.html" class="back-link">Back to Home</a>
+
+      <div class="helper">Share your link with friends and climb the waitlist.</div>
+
+      <div class="rewards">
+        <h3>Referral Rewards</h3>
+        <ul>
+          <li>3 referrals → Early access</li>
+          <li>10 referrals → GoPlay badge</li>
+          <li>25 referrals → Free GoPlay merch</li>
+          <li>50 referrals → VIP family status</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function getParam(name) {
+      const url = new URL(window.location.href);
+      return url.searchParams.get(name);
+    }
+
+    const code = getParam('code');
+    const position = getParam('position');
+    const siteURL = window.location.origin;
+
+    const referralLink = `${siteURL}/?ref=${encodeURIComponent(code || '')}`;
+
+    document.getElementById('referral-link').innerText = referralLink;
+
+    if (position) {
+      document.getElementById('position').innerText = `Your position in line: #${position}`;
+    } else {
+      document.getElementById('position').innerText = 'Your waitlist spot is being saved.';
+    }
+
+    function copyLink() {
+      navigator.clipboard.writeText(referralLink);
+      alert('Referral link copied!');
+    }
+
+    gtag('event', 'waitlist_signup', {
+      event_category: 'engagement',
+      event_label: 'waitlist'
+    });
+  </script>
+</body>
+</html>
